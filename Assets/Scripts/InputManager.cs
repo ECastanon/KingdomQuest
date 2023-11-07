@@ -10,11 +10,15 @@ public class InputManager : MonoBehaviour
     public Action OnMouseUp;
     private Vector2 cameraVector;
 
-    [SerializeField]
-    Camera cam;
+    private Camera cam;
 
     public LayerMask groundMask;
     [HideInInspector] public Vector2 camVect;
+
+    void Start()
+    {
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+    }
     private void Update()
     {
         CheckClickDownEvent();

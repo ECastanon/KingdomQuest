@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class RoadManager : MonoBehaviour
 {
-    public PlacementManager pm;
+    private PlacementManager pm;
     public List<Vector3Int> temporaryPlacementPos = new List<Vector3Int>();
     public List<Vector3Int> roadPositionsToReCheck = new List<Vector3Int>();
     public GameObject roadStraight;
-    public RoadFixer roadFixer;
+    private RoadFixer roadFixer;
 
     void Start()
     {
+        pm = GameObject.Find("PlacementManager").GetComponent<PlacementManager>();
         roadFixer = GetComponent<RoadFixer>();
     }
 

@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public CameraMovement cm;
-    public InputManager im;
-    public RoadManager rm;
+    private CameraMovement cm;
+    private InputManager im;
+    private RoadManager rm;
 
     void Start()
     {
+        cm = GameObject.Find("Main Camera").GetComponent<CameraMovement>();
+        im = GameObject.Find("InputManager").GetComponent<InputManager>();
+        rm = GameObject.Find("RoadManager").GetComponent<RoadManager>();
+
         im.OnMouseClick += HandleMouseClick;
     }
     void Update()
