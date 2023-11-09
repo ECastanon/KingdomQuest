@@ -35,35 +35,4 @@ public class CameraMovement : MonoBehaviour
             gameCamera.orthographicSize += .5f;
         }
     }
-    public void CameraBounds()
-    {
-        if (Input.GetKey("w"))
-        {
-            if (transform.position.z > MinimumZValue && transform.position.z < MaximumZValue)
-            {
-                transform.Translate(Vector3.forward * cameraMovementSpeed * Time.deltaTime, Space.World);
-            }
-        }
-        if (Input.GetKey("a"))
-        {
-            if (transform.position.x > MinimumXValue && transform.position.x < MaximumXValue)
-            {
-                transform.Translate(Vector3.left * cameraMovementSpeed * Time.deltaTime, Space.World);
-            }
-        }
-        if (Input.GetKey("d"))
-        {
-            if (transform.position.x > MinimumXValue && transform.position.x < MaximumXValue)
-            {
-                transform.Translate(Vector3.right * cameraMovementSpeed * Time.deltaTime, Space.World);
-            }
-        }
-        if (Input.GetKey("s"))
-        {
-            if (transform.position.z > MinimumZValue && transform.position.z < MaximumZValue)
-            {
-                transform.Translate(Vector3.back * cameraMovementSpeed * Time.deltaTime, Space.World);
-            }
-        }
-    }
 }
