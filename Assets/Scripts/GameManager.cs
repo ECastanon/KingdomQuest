@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     {
         cm.MoveCamera(new Vector3(im.camVect.x, 0, im.camVect.y));
         cm.CameraScroll();
+        //cm.CameraBounds();
     }
     private void HandleMouseClick(Vector3Int position)
     {
