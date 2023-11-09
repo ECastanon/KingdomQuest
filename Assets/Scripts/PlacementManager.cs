@@ -7,9 +7,11 @@ public class PlacementManager : MonoBehaviour
     public int width, height;
     Grid placementGrid;
     private Dictionary<Vector3Int, StructureModel> tempRoadObject = new Dictionary<Vector3Int, StructureModel>();
+    private ResourceManager rm;
 
     void Start()
     {
+        rm = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
         placementGrid = new Grid(width,height);
     }
     public bool CheckIfPositionInBound(Vector3Int pos)
@@ -26,9 +28,13 @@ public class PlacementManager : MonoBehaviour
     }
     public void PlaceTempStructure(Vector3Int pos, GameObject structPrefab, CellType type)
     {
-        placementGrid[pos.x, pos.z] = type;
-        StructureModel structure = CreateNewStructureModel(pos, structPrefab, type);
-        tempRoadObject.Add(pos, structure);
+        if(rm.goldCount >= rm.roadCost) //Change cost to be either house or road depending on prefab type
+        {
+            placementGrid[pos.x, pos.z] = type;
+            StructureModel structure = CreateNewStructureModel(pos, structPrefab, type);
+            tempRoadObject.Add(pos, structure);
+            rm.goldCount -= rm.roadCost;
+        }
     }
     private bool CheckIfPositionOfType(Vector3Int pos, CellType type)
     {
