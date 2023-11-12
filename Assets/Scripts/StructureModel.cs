@@ -6,12 +6,12 @@ public class StructureModel : MonoBehaviour
 {
     float yHeight = 0;
 
-    public void CreateModel(GameObject model)
+    public void CreateModel(GameObject model) //Loads the object passed in
     {
         var structure = Instantiate(model, transform);
         yHeight = structure.transform.position.y;
     }
-    public void SwapModel(GameObject model, Quaternion rotation)
+    public void SwapModel(GameObject model, Quaternion rotation) //Changes model
     {
         foreach(Transform child in transform)
         {

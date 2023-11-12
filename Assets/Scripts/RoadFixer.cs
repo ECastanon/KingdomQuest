@@ -7,7 +7,7 @@ public class RoadFixer : MonoBehaviour
 {
     public GameObject deadEnd, roadStraight, corner, threeWay, fourWay;
     
-    public void FixRoadAtPosition(PlacementManager pm, Vector3Int tempPos)
+    public void FixRoadAtPosition(PlacementManager pm, Vector3Int tempPos) //Fixes the placed Road by checking neighbors
     {
         //right, up, left, down - order checked
         var result = pm.GetNeighborTypesFor(tempPos);

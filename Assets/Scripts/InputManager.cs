@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,12 +9,8 @@ public class InputManager : MonoBehaviour
     public Action<Vector3Int> OnMouseClick, OnMouseHold;
     public Action OnMouseUp;
     private Vector2 cameraVector;
-
     private Camera cam;
-
     public LayerMask groundMask;
-    [HideInInspector] public Vector2 camVect;
-
     void Start()
     {
         cam = GameObject.Find("Main Camera").GetComponent<Camera>();
@@ -24,9 +20,8 @@ public class InputManager : MonoBehaviour
         CheckClickDownEvent();
         CheckClickUpEvent();
         CheckClickHoldEvent();
-        CheckArrowInput();
     }
-    private Vector3Int? RaycastGround()
+    private Vector3Int? RaycastGround() //Draws a line from the mouse to detect where the ground is
     {
         RaycastHit hit;
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -37,7 +32,8 @@ public class InputManager : MonoBehaviour
         }
         return null;
     }
-    private void CheckClickDownEvent()
+    //Mouse Clicking Events
+    private void CheckClickDownEvent()//Checks ground
     {
         if(Input.GetMouseButton(0) && EventSystem.current.IsPointerOverGameObject() == false)
         {
@@ -55,7 +51,7 @@ public class InputManager : MonoBehaviour
             OnMouseUp?.Invoke();
         }
     }
-    private void CheckClickHoldEvent()
+    private void CheckClickHoldEvent()//Checks ground while holding
     {
         if(Input.GetMouseButton(0) && EventSystem.current.IsPointerOverGameObject() == false)
         {
@@ -65,9 +61,5 @@ public class InputManager : MonoBehaviour
                 OnMouseHold?.Invoke(position.Value);
             }
         }
-    }
-    private void CheckArrowInput()
-    {
-        camVect = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
     }
 }

@@ -4,26 +4,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private CameraMovement cm;
     private InputManager im;
     private RoadManager rm;
 
     void Start()
     {
-        cm = GameObject.Find("Main Camera").GetComponent<CameraMovement>();
         im = GameObject.Find("InputManager").GetComponent<InputManager>();
         rm = GameObject.Find("RoadManager").GetComponent<RoadManager>();
 
-        im.OnMouseClick += HandleMouseClick;
-    }
-    void Update()
-    {
-        cm.MoveCamera(new Vector3(im.camVect.x, 0, im.camVect.y));
-        cm.CameraScroll();
-    }
-    private void HandleMouseClick(Vector3Int position)
-    {
-        Debug.Log(position);
-        rm.PlaceRoad(position);
+        im.OnMouseClick += rm.PlaceRoad;
+        im.OnMouseHold += rm.PlaceRoad;
+        im.OnMouseUp += rm.FinishPlacingRoad;
     }
 }
