@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18090543, g: 0.22645362, b: 0.30723208, a: 1}
+  m_IndirectSpecularColor: {r: 0.1809051, g: 0.22645304, b: 0.30723083, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6669,9 +6669,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   housePrefabs:
-  - {fileID: 2769822920355022703, guid: 7102e40a9ba863a44838c4fd828cc22b, type: 3}
+  - {fileID: 5155785794950582408, guid: 6dae97a974a0e8a408eb1e60544d6613, type: 3}
   specialPrefabs:
-  - {fileID: 8028572972740798329, guid: b4e018779a1b9aa44b2a988c6d8ddfda, type: 3}
+  - {fileID: 7681710815352811610, guid: f4c7938924918224381c7339bac0fa7d, type: 3}
 --- !u!4 &572089260
 Transform:
   m_ObjectHideFlags: 0
@@ -11839,13 +11839,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 656fe19fdaffbc34db386e1af4e39221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadEnd: {fileID: 1120765361980748800, guid: 126bc1b54aa974c45b523eabbb58d51e, type: 3}
-  roadStraight: {fileID: 5661862354351878554, guid: 0cf01c743836d154eb47042e1bc62afd,
+  deadEnd: {fileID: 6293571881149601276, guid: c9ea8d65ffada7244b885047eb31b675, type: 3}
+  roadStraight: {fileID: 6293571881149601276, guid: c9ea8d65ffada7244b885047eb31b675,
     type: 3}
-  corner: {fileID: 7077802812573144028, guid: fd4c97eb7b86f1149a7745204ed8904e, type: 3}
-  threeWay: {fileID: 2384947387477557946, guid: 2524a8437a2d4394da7f7a0546a71f3d,
+  corner: {fileID: 5726294740083927253, guid: e5ba9569641f8e543b26718216266f2b, type: 3}
+  threeWay: {fileID: 5561521940114186956, guid: ddda8edc54d558744bd116c4babe97b0,
     type: 3}
-  fourWay: {fileID: 3351635067702010651, guid: f4402828bce58b54791119f89fa2df61, type: 3}
+  fourWay: {fileID: 5561521940114186956, guid: ddda8edc54d558744bd116c4babe97b0, type: 3}
 --- !u!1001 &974467084
 PrefabInstance:
   m_ObjectHideFlags: 0

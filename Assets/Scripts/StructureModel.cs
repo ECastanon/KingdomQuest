@@ -5,11 +5,12 @@ using UnityEngine;
 public class StructureModel : MonoBehaviour
 {
     float yHeight = 0;
-
+    
     public void CreateModel(GameObject model) //Loads the object passed in
     {
         var structure = Instantiate(model, transform);
         yHeight = structure.transform.position.y;
+        structure.transform.localPosition = new Vector3(0,yHeight,0);
     }
     public void SwapModel(GameObject model, Quaternion rotation) //Changes model
     {

@@ -35,28 +35,28 @@ public class RoadFixer : MonoBehaviour
     {
         if(result[1] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,270,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,0,0));
         } else if(result[2] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,0,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,90,0));
         } else if(result[3] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,90,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,0,0));
         }
          else if(result[0] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,180,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,90,0));
         }
     }
     private bool CreateStraightRoad(PlacementManager pm, CellType[] result, Vector3Int pos)
     {
         if(result[0] == CellType.Road && result[2] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, roadStraight, Quaternion.Euler(0,0,0));
+            pm.ModifyStructureModel(pos, roadStraight, Quaternion.Euler(0,90,0));
             return true;
         } else if(result[1] == CellType.Road && result[3] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, roadStraight, Quaternion.Euler(0,90,0));
+            pm.ModifyStructureModel(pos, roadStraight, Quaternion.Euler(0,0,0));
             return true;
         }
         return false;

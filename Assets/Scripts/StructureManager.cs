@@ -22,6 +22,7 @@ public class StructureManager : MonoBehaviour
             pm.PlaceOnMap(position, housePrefabs[0], CellType.Structure);
             AudioPlayer.instance.PlayPlacementSound();
         }
+        Debug.Log("House Pos: " + position);
     }
 
     public void PlaceSpecial(Vector3Int position) //Passes special information to PlacementManager

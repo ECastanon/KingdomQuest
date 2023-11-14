@@ -16,6 +16,7 @@ public class ResourceManager : MonoBehaviour
     void Start()
     {
         goldtxt = GameObject.Find("goldtxt").GetComponent<TextMeshProUGUI>();
+        UpdateGold();
     }
     public void UpdateGold()
     {
