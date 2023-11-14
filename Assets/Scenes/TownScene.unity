@@ -863,7 +863,7 @@ Transform:
   m_GameObject: {fileID: 74727407}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.047351, y: -0.8655519, z: 6.947175}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7965,7 +7965,7 @@ GameObject:
   - component: {fileID: 694231480}
   - component: {fileID: 694231479}
   m_Layer: 5
-  m_Name: gold
+  m_Name: goldtxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20117,8 +20117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4b8f0ab6359234ca6fa096f85fe42d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 14
-  height: 14
+  width: 15
+  height: 15
 --- !u!1001 &1570446647
 PrefabInstance:
   m_ObjectHideFlags: 0
