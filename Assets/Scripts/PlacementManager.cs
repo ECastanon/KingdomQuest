@@ -8,11 +8,11 @@ public class PlacementManager : MonoBehaviour
     Grid placementGrid;
     private Dictionary<Vector3Int, StructureModel> tempRoadObject = new Dictionary<Vector3Int, StructureModel>();
     private Dictionary<Vector3Int, StructureModel> structDict = new Dictionary<Vector3Int, StructureModel>(); 
-    private ResourceManager rm;
+    private ResourceManager resourceManager;
 
     void Start()
     {
-        rm = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
+        resourceManager = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
         placementGrid = new Grid(width,height);
     }
     public bool CheckIfPositionInBound(Vector3Int pos) //Checks if the selected tile is within the given bounds
@@ -27,16 +27,7 @@ public class PlacementManager : MonoBehaviour
     {
         return CheckIfPositionOfType(pos, CellType.Empty);
     }
-    public void PlaceTempStructure(Vector3Int pos, GameObject structPrefab, CellType type) //Passes information to CreateNewSructureModel
-    {
-        if(rm.goldCount >= rm.roadCost) //Change cost to be either house or road depending on prefab type
-        {
-            placementGrid[pos.x, pos.z] = type;
-            StructureModel structure = CreateNewStructureModel(pos, structPrefab, type);
-            tempRoadObject.Add(pos, structure);
-            rm.goldCount -= rm.roadCost;
-        }
-    }
+
     private bool CheckIfPositionOfType(Vector3Int pos, CellType type)
     {
         return placementGrid[pos.x, pos.z] == type;
@@ -101,5 +92,49 @@ public class PlacementManager : MonoBehaviour
             structDict.Add(struc.Key, struc.Value);
         }
         tempRoadObject.Clear();
+    }
+    private void DestroyNatureAt(Vector3Int position) //Removes Nature Layer items near tile
+    {
+        RaycastHit[] hits = Physics.BoxCastAll(position + new Vector3(0, 0.5f, 0), new Vector3(0.5f, 0.5f, 0.5f), transform.up, Quaternion.identity, 1f, 1 << LayerMask.NameToLayer("Nature"));
+        foreach (var item in hits)
+        {
+            Destroy(item.collider.gameObject);
+        }
+    }
+    public void PlaceOnMap(Vector3Int position, GameObject structurePrefab, CellType type)
+    {
+        if(type == CellType.Road)
+        {
+            if(0 > resourceManager.goldCount - resourceManager.roadCost)
+            {
+                Debug.Log("Cannot afford this!");
+                return;
+            }
+        }
+        if(type == CellType.Structure)
+        {
+            if(0 > resourceManager.goldCount - resourceManager.houseCost)
+            {
+                Debug.Log("Cannot afford this!");
+                return;
+            }
+        }
+        placementGrid[position.x, position.z] = type;
+        StructureModel structure = CreateNewStructureModel(position, structurePrefab, type);
+        structDict.Add(position, structure);
+        DestroyNatureAt(position);
+        ChargePlayer(type);
+    }
+    private void ChargePlayer(CellType type) //Improve to allow for more building types and costs (May need to change the parameter)
+    {
+        if(type == CellType.Road)
+        {
+            resourceManager.goldCount -= resourceManager.roadCost;
+        }
+        if(type == CellType.Structure)
+        {
+            resourceManager.goldCount -= resourceManager.houseCost;
+        }
+        resourceManager.UpdateGold();
     }
 }

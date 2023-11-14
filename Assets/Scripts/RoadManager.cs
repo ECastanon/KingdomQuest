@@ -30,7 +30,7 @@ public class RoadManager : MonoBehaviour
             startPos = pos;
 
             temporaryPlacementPos.Add(pos);  
-            pm.PlaceTempStructure(pos, roadFixer.deadEnd, CellType.Road);
+            pm.PlaceOnMap(pos, roadFixer.deadEnd, CellType.Road);
         } else if (placementMode == true){
             pm.RemoveAllTempStructures();
             temporaryPlacementPos.Clear();
@@ -47,7 +47,7 @@ public class RoadManager : MonoBehaviour
             foreach(var tempPos in temporaryPlacementPos)
             {
                 if(pm.CheckIfPositionIsFree(pos) == false){continue;}
-                pm.PlaceTempStructure(tempPos, roadFixer.deadEnd, CellType.Road);
+                pm.PlaceOnMap(tempPos, roadFixer.deadEnd, CellType.Road);
             }
         }
         FixRoadPrefabs();

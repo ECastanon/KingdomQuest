@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Camera gameCamera;
+    private Camera gameCamera;
     public float cameraMovementSpeed = 5;
     public int MinX, MaxX, MinZ, MaxZ;
     private Vector3 camVect;
