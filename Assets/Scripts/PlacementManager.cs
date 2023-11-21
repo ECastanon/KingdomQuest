@@ -9,10 +9,12 @@ public class PlacementManager : MonoBehaviour
     private Dictionary<Vector3Int, StructureModel> tempRoadObject = new Dictionary<Vector3Int, StructureModel>();
     private Dictionary<Vector3Int, StructureModel> structDict = new Dictionary<Vector3Int, StructureModel>(); 
     private ResourceManager resourceManager;
+    private PeopleManager peopleManager;
 
     void Start()
     {
         resourceManager = GameObject.Find("ResourceManager").GetComponent<ResourceManager>();
+        peopleManager = GameObject.Find("PeopleManager").GetComponent<PeopleManager>();
         placementGrid = new Grid(width,height);
     }
     public bool CheckIfPositionInBound(Vector3Int pos) //Checks if the selected tile is within the given bounds
@@ -134,7 +136,9 @@ public class PlacementManager : MonoBehaviour
         if(type == CellType.Structure)
         {
             resourceManager.goldCount -= resourceManager.houseCost;
+            peopleManager.population += 1;
         }
         resourceManager.UpdateGold();
+        peopleManager.UpdatePeople();
     }
 }
