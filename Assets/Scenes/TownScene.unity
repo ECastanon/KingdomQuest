@@ -4562,7 +4562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736bc7fdbd3b2ac4cabb462b071b7620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldCount: 500
+  goldCount: 1000
   roadCost: 5
   houseCost: 25
 --- !u!4 &391013806
