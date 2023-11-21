@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class DayAndNightCycle : MonoBehaviour
 {
-  Vector3 rot = Vector3.zero;
-  float degreespersec = 6;
+    Light myLight;
+    private GameObject rm;
+    void Start()
+    {
+        myLight = GetComponent<Light>();
+        rm = GameObject.Find("ResourceManager");
+    }
 
-    // Update is called once per frame
     void Update()
     {
-        rot.x = degreespersec * Time.deltaTime;
-        transform.Rotate(rot, Space.World);
+        myLight.intensity = Mathf.PingPong(Time.time/50, 1.3f);
+        if(myLight.intensity <= 0){rm.GetComponent<ResourceManager>().StartDay();}
     }
 }

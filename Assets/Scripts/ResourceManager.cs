@@ -22,4 +22,8 @@ public class ResourceManager : MonoBehaviour
     {
         goldtxt.text = "Gold: " + goldCount;
     }
+    public void StartDay() //Called in DayNightCycle
+    {
+        //Play any functions that trigger at the start of a day
+    }
 }
