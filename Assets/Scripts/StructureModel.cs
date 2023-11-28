@@ -5,7 +5,7 @@ using UnityEngine;
 public class StructureModel : MonoBehaviour
 {
     float yHeight = 0;
-    
+    public Vector3Int RoadPos {get; set;}
     public void CreateModel(GameObject model) //Loads the object passed in
     {
         var structure = Instantiate(model, transform);

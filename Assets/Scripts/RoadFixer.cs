@@ -35,10 +35,10 @@ public class RoadFixer : MonoBehaviour
     {
         if(result[1] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,0,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,180,0));
         } else if(result[2] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,90,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,270,0));
         } else if(result[3] == CellType.Road)
         {
             pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,0,0));
