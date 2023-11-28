@@ -120,14 +120,8 @@ public class PlacementManager : MonoBehaviour
             }
         }
         placementGrid[position.x, position.z] = type;
-        structDict.Add(position, structure);
         StructureModel structure = CreateNewStructureModel(position, structurePrefab, type);
-
-        var structureNeedingRoad = structure.GetComponent<INeedingRoad>();
-        if(structureNeedingRoad != nuint)
-        {
-            structureNeedingRoad.RoadPos = GetNearestRoad(position, width, height).Value;
-        }
+        structDict.Add(position, structure);
         
         DestroyNatureAt(position);
         ChargePlayer(type);

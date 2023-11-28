@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface INeedingRoad
+public class RotationToTurn : MonoBehaviour
 {
-    
+    public int rotationToTurn;
 }
