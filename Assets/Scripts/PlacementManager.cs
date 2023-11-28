@@ -65,9 +65,9 @@ public class PlacementManager : MonoBehaviour
         }
         return neighbors;
     }
-    public List<Vector3Int> GetPathBetween(Vector3Int startPos, Vector3Int endPos)//Finds shortest distance when drawing roads
+    public List<Vector3Int> GetPathBetween(Vector3Int startPos, Vector3Int endPos, bool isAgent = false)//Finds shortest distance when drawing roads
     {
-        var resultPath = GridSearch.AStarSearch(placementGrid, new Point(startPos.x, startPos.z), new Point(endPos.x, endPos.z));
+        var resultPath = GridSearch.AStarSearch(placementGrid, new Point(startPos.x, startPos.z), new Point(endPos.x, endPos.z), isAgent);
         List<Vector3Int> path = new List<Vector3Int>();
         foreach(Point point in resultPath)
         {
@@ -120,10 +120,33 @@ public class PlacementManager : MonoBehaviour
             }
         }
         placementGrid[position.x, position.z] = type;
-        StructureModel structure = CreateNewStructureModel(position, structurePrefab, type);
         structDict.Add(position, structure);
+        StructureModel structure = CreateNewStructureModel(position, structurePrefab, type);
+
+        var structureNeedingRoad = structure.GetComponent<INeedingRoad>();
+        if(structureNeedingRoad != nuint)
+        {
+            structureNeedingRoad.RoadPos = GetNearestRoad(position, width, height).Value;
+        }
+        
         DestroyNatureAt(position);
         ChargePlayer(type);
+    }
+    private Vector3Int? GetNearestRoad(Vector3Int pos, int width, int height)
+    {
+        for(int x = 0; x < width; x++)
+        {
+            for(int y = 0; y < height; y++)
+            {  
+                var newPos = pos + new Vector3Int(x,0,y);
+                var roads = GetNeighborsOfTypeFor(newPos, CellType.Road);
+                if(roads.Count > 0)
+                {
+                    return roads[0];
+                }
+            }
+        }
+        return null;
     }
     private void ChargePlayer(CellType type) //Improve to allow for more building types and costs (May need to change the parameter)
     {
