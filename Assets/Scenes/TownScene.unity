@@ -873,6 +873,7 @@ Transform:
   - {fileID: 572089260}
   - {fileID: 500113472}
   - {fileID: 1890267256}
+  - {fileID: 655317317}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &75374023
@@ -4562,7 +4563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736bc7fdbd3b2ac4cabb462b071b7620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldCount: 1000
+  goldCount: 500
   roadCost: 5
   houseCost: 25
 --- !u!4 &391013806
@@ -7360,6 +7361,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 641624971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &655317316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655317317}
+  - component: {fileID: 655317318}
+  m_Layer: 0
+  m_Name: PeopleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655317317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655317316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 74727408}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &655317318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655317316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f2536056402d04c857202cb6e3a803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  population: 0
 --- !u!1001 &664373808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24932,8 +24978,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 104, y: -70}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 175.77313, y: -70}
+  m_SizeDelta: {x: 343.5463, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890892701
 MonoBehaviour:
@@ -24955,7 +25001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Population: 0 '
+  m_text: 'Population:  0 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

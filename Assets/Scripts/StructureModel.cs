@@ -11,6 +11,7 @@ public class StructureModel : MonoBehaviour
         var structure = Instantiate(model, transform);
         yHeight = structure.transform.position.y;
         structure.transform.localPosition = new Vector3(0,yHeight,0);
+        checkHouse(model); 
     }
     public void SwapModel(GameObject model, Quaternion rotation) //Changes model
     {
@@ -21,5 +22,11 @@ public class StructureModel : MonoBehaviour
         var structure = Instantiate(model, transform);
         structure.transform.localPosition = new Vector3(0,yHeight,0);
         structure.transform.localRotation = rotation;
+    }
+    public void checkHouse(GameObject obj) {
+        if (obj.tag == "house") {
+            Debug.Log("spawn person");
+
+        }
     }
 }

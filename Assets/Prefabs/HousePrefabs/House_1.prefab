@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1791554059431502633}
   m_Layer: 0
   m_Name: SM_hous_01_A(Clone)
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 5924158622773988411}
   m_Layer: 0
   m_Name: House_1
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
