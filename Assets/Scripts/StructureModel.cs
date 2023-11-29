@@ -37,8 +37,6 @@ public class StructureModel : MonoBehaviour
     }
     public void checkHouse(GameObject obj)
     {
-        Debug.Log("test");
-        Debug.Log(obj);
         if (obj.tag == "house")
         {
             int rand = Random.Range(0, GameObject.Find("PeopleList").GetComponent<PeopleList>().citizenPrefabs.Count);
@@ -47,18 +45,18 @@ public class StructureModel : MonoBehaviour
             FindRandomPersonLocation(civ);
         }
     }
-    private void FindRandomPersonLocation(GameObject civ) //Creates a list of straight roads and randomly places a person on one
+    private void FindRandomPersonLocation(GameObject civ) //Creates a list of straight/deadend roads and randomly places a person on one
     {
         List<GameObject> straights = new List<GameObject>();
         foreach (var road in GameObject.Find("RoadManager").GetComponent<RoadManager>().roadList)
         {
-            if(road.transform.name == "StraightRoad(Clone)")
+            if(road.transform.name == "StraightRoad(Clone)" || road.transform.name == "DeadEndRoad(Clone)")
             {
                 straights.Add(road);
             }
         }
         int rand = Random.Range(0, straights.Count);
-        civ.transform.position = straights[rand].transform.position;
+        civ.transform.position = new Vector3(straights[rand].transform.position.x, 0.02f, straights[rand].transform.position.z);
         civ.transform.rotation = Quaternion.Euler(0, straights[rand].transform.localRotation.eulerAngles.y, 0);
     }
 }

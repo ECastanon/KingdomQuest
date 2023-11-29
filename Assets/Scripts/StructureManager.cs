@@ -1,5 +1,4 @@
 ﻿using SVS;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +18,8 @@ public class StructureManager : MonoBehaviour
     {
         if (CheckPositionBeforePlacement(position))
         {
-            pm.PlaceOnMap(position, housePrefabs[0], CellType.Structure);
+            int rand = Random.Range(0, housePrefabs.Count);
+            pm.PlaceOnMap(position, housePrefabs[rand], CellType.Structure);
             AudioPlayer.instance.PlayPlacementSound();
         }
         Debug.Log("House Pos: " + position);
@@ -29,7 +29,8 @@ public class StructureManager : MonoBehaviour
     {
         if (CheckPositionBeforePlacement(position))
         {
-            pm.PlaceOnMap(position, specialPrefabs[0], CellType.Structure);
+            int rand = Random.Range(0, specialPrefabs.Count);
+            pm.PlaceOnMap(position, specialPrefabs[rand], CellType.Structure);
             AudioPlayer.instance.PlayPlacementSound();
         }
     }

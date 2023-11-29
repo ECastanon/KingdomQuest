@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8475901383847932136}
   m_Layer: 0
   m_Name: House_2
-  m_TagString: Untagged
+  m_TagString: house
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7681710815352811610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7069834, z: 0.7072302, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0.10700001}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:

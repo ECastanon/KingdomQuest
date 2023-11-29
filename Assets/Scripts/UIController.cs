@@ -8,6 +8,7 @@ public class UIController : MonoBehaviour
 {
     public Action OnRoadPlacement, OnHousePlacement, OnSpecialPlacement;
     private Button roadButton, houseButton, specialButton;
+    private GameObject warningPanel;
 
     public Color outlineColor;
     List<Button> buttonList;
@@ -17,6 +18,9 @@ public class UIController : MonoBehaviour
         roadButton = GameObject.Find("PlaceRoadBtn").GetComponent<Button>();
         houseButton = GameObject.Find("PlaceHouseBtn").GetComponent<Button>();
         specialButton = GameObject.Find("PlaceSpecialBtn").GetComponent<Button>();
+
+        warningPanel = GameObject.Find("WarningPanel");
+        warningPanel.SetActive(false);
 
         buttonList = new List<Button>(){roadButton, houseButton, specialButton};
 
@@ -29,9 +33,26 @@ public class UIController : MonoBehaviour
         });
         houseButton.onClick.AddListener(() =>
         {
-            ResetColor();
-            ModifyOutLine(houseButton);
-            OnHousePlacement?.Invoke();
+            ResetColor(); //Checks if there are at least 2  valid road tiles to place houses
+            List<GameObject> straights = new List<GameObject>();
+            foreach (var road in GameObject.Find("RoadManager").GetComponent<RoadManager>().roadList)
+            {
+                if(road.transform.name == "StraightRoad(Clone)" || road.transform.name == "DeadEndRoad(Clone)")
+                {
+                    straights.Add(road);
+                }
+            }
+            if(straights.Count >= 2)
+            {
+                warningPanel.SetActive(false);
+                ModifyOutLine(houseButton);
+                OnHousePlacement?.Invoke();
+            } else 
+            {
+                warningPanel.SetActive(true);
+                warningPanel.GetComponent<FadeOut>().OnReveal();
+            }
+
         });
         specialButton.onClick.AddListener(() =>
         {
