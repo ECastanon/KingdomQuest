@@ -47,20 +47,18 @@ public class StructureModel : MonoBehaviour
             FindRandomPersonLocation(civ);
         }
     }
-    private void FindRandomPersonLocation(GameObject civ)
+    private void FindRandomPersonLocation(GameObject civ) //Creates a list of straight roads and randomly places a person on one
     {
-        bool spawned = false;
+        List<GameObject> straights = new List<GameObject>();
         foreach (var road in GameObject.Find("RoadManager").GetComponent<RoadManager>().roadList)
         {
             if(road.transform.name == "StraightRoad(Clone)")
             {
-                if(spawned == false)
-                {
-                    civ.transform.position = road.transform.position;
-                    civ.transform.rotation = Quaternion.Euler(0, road.transform.localRotation.eulerAngles.y, 0);
-                    spawned = true;
-                }
+                straights.Add(road);
             }
         }
+        int rand = Random.Range(0, straights.Count);
+        civ.transform.position = straights[rand].transform.position;
+        civ.transform.rotation = Quaternion.Euler(0, straights[rand].transform.localRotation.eulerAngles.y, 0);
     }
 }
