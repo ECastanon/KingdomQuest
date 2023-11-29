@@ -35,28 +35,28 @@ public class RoadFixer : MonoBehaviour
     {
         if(result[1] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,180,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,180,0), CellType.Road);
         } else if(result[2] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,270,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,270,0), CellType.Road);
         } else if(result[3] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,0,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,0,0), CellType.Road);
         }
          else if(result[0] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,90,0));
+            pm.ModifyStructureModel(pos, deadEnd, Quaternion.Euler(0,90,0), CellType.Road);
         }
     }
     private bool CreateStraightRoad(PlacementManager pm, CellType[] result, Vector3Int pos)
     {
         if(result[0] == CellType.Road && result[2] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, roadStraight, Quaternion.Euler(0,90,0));
+            pm.ModifyStructureModel(pos, roadStraight, Quaternion.Euler(0,90,0), CellType.Road);
             return true;
         } else if(result[1] == CellType.Road && result[3] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, roadStraight, Quaternion.Euler(0,0,0));
+            pm.ModifyStructureModel(pos, roadStraight, Quaternion.Euler(0,0,0), CellType.Road);
             return true;
         }
         return false;
@@ -65,38 +65,38 @@ public class RoadFixer : MonoBehaviour
     {
         if(result[1] == CellType.Road && result[2] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, corner, Quaternion.Euler(0,90,0));
+            pm.ModifyStructureModel(pos, corner, Quaternion.Euler(0,90,0), CellType.Road);
         } else if(result[2] == CellType.Road && result[3] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, corner, Quaternion.Euler(0,180,0));
+            pm.ModifyStructureModel(pos, corner, Quaternion.Euler(0,180,0), CellType.Road);
         } else if(result[3] == CellType.Road && result[0] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, corner, Quaternion.Euler(0,270,0));
+            pm.ModifyStructureModel(pos, corner, Quaternion.Euler(0,270,0), CellType.Road);
         }
          else if(result[0] == CellType.Road && result[1] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, corner, Quaternion.Euler(0,0,0));
+            pm.ModifyStructureModel(pos, corner, Quaternion.Euler(0,0,0), CellType.Road);
         }
     }
     private void Create3Way(PlacementManager pm, CellType[] result, Vector3Int pos)
     {
         if(result[1] == CellType.Road && result[2] == CellType.Road && result[3] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, threeWay, Quaternion.identity);
+            pm.ModifyStructureModel(pos, threeWay, Quaternion.identity, CellType.Road);
         } else if(result[2] == CellType.Road && result[3] == CellType.Road && result[0] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, threeWay, Quaternion.Euler(0,90,0));
+            pm.ModifyStructureModel(pos, threeWay, Quaternion.Euler(0,90,0), CellType.Road);
         } else if(result[3] == CellType.Road && result[0] == CellType.Road && result[1] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, threeWay, Quaternion.Euler(0,180,0));
+            pm.ModifyStructureModel(pos, threeWay, Quaternion.Euler(0,180,0), CellType.Road);
         }
          else if(result[0] == CellType.Road && result[1] == CellType.Road && result[2] == CellType.Road)
         {
-            pm.ModifyStructureModel(pos, threeWay, Quaternion.Euler(0,270,0));
+            pm.ModifyStructureModel(pos, threeWay, Quaternion.Euler(0,270,0), CellType.Road);
         }
     }
     private void Create4Way(PlacementManager pm, CellType[] result, Vector3Int pos)
     {
-        pm.ModifyStructureModel(pos, fourWay, Quaternion.identity);
+        pm.ModifyStructureModel(pos, fourWay, Quaternion.identity, CellType.Road);
     }
 }

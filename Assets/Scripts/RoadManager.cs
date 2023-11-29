@@ -10,6 +10,7 @@ public class RoadManager : MonoBehaviour
     private RoadFixer roadFixer;
     private Vector3Int startPos;
     public bool placementMode = false;
+    public List<GameObject> roadList = new List<GameObject>();
 
     void Start()
     {
@@ -31,7 +32,8 @@ public class RoadManager : MonoBehaviour
 
             temporaryPlacementPos.Add(pos);  
             pm.PlaceOnMap(pos, roadFixer.deadEnd, CellType.Road);
-        } else if (placementMode == true){
+        } else if (placementMode == true)
+        {
             pm.RemoveAllTempStructures();
             temporaryPlacementPos.Clear();
 
@@ -52,7 +54,6 @@ public class RoadManager : MonoBehaviour
         }
         FixRoadPrefabs();
     }
-
     private void FixRoadPrefabs() //Fixes road type from RoadFixer
     {
         foreach(var tempPos in temporaryPlacementPos)

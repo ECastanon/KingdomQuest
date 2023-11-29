@@ -7,7 +7,7 @@ public class PlacementManager : MonoBehaviour
     public int width, height;
     Grid placementGrid;
     private Dictionary<Vector3Int, StructureModel> tempRoadObject = new Dictionary<Vector3Int, StructureModel>();
-    private Dictionary<Vector3Int, StructureModel> structDict = new Dictionary<Vector3Int, StructureModel>(); 
+    private Dictionary<Vector3Int, StructureModel> structDict = new Dictionary<Vector3Int, StructureModel>();
     private ResourceManager resourceManager;
     private PeopleManager peopleManager;
 
@@ -40,17 +40,17 @@ public class PlacementManager : MonoBehaviour
         structure.transform.SetParent(transform);
         structure.transform.localPosition = pos;
         var structureModel = structure.AddComponent<StructureModel>();
-        structureModel.CreateModel(structPrefab);
+        structureModel.CreateModel(structPrefab, type);
         return structureModel;
     }
-    public void ModifyStructureModel(Vector3Int pos, GameObject newModel, Quaternion rotation) //Changes object model and rotation
+    public void ModifyStructureModel(Vector3Int pos, GameObject newModel, Quaternion rotation, CellType type) //Changes object model and rotation
     {
         if(tempRoadObject.ContainsKey(pos))
         {
-            tempRoadObject[pos].SwapModel(newModel,rotation);
+            tempRoadObject[pos].SwapModel(newModel,rotation, type);
         } else if(structDict.ContainsKey(pos))
         {
-            structDict[pos].SwapModel(newModel,rotation);
+            structDict[pos].SwapModel(newModel,rotation, type);
         }
     }
     public CellType[] GetNeighborTypesFor(Vector3Int pos) //Returns array of tile neighbors
