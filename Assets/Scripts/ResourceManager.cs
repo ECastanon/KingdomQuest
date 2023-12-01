@@ -6,7 +6,11 @@ using TMPro;
 public class ResourceManager : MonoBehaviour
 {
     private TextMeshProUGUI goldtxt;
+    private TextMeshProUGUI foodtxt;
+    private TextMeshProUGUI happytxt;
     public int goldCount; //Total Gold Count
+    public int foodCount;
+    public int happyCount;
 
     //Structure Costs
     [Header("Structure Costs")]
@@ -18,11 +22,23 @@ public class ResourceManager : MonoBehaviour
     void Start()
     {
         goldtxt = GameObject.Find("goldtxt").GetComponent<TextMeshProUGUI>();
+        foodtxt = GameObject.Find("foodtxt").GetComponent<TextMeshProUGUI>();
+        happytxt = GameObject.Find("happytxt").GetComponent<TextMeshProUGUI>();
         UpdateGold();
+        UpdateFood();
+        UpdateHappy();
     }
     public void UpdateGold()
     {
         goldtxt.text = "Gold: " + goldCount;
+    }
+    public void UpdateFood()
+    {
+        foodtxt.text = "Food: " + foodCount;
+    }
+    public void UpdateHappy()
+    {
+        happytxt.text = "Happiness: " + happyCount + "%";
     }
     public void StartDay() //Called in DayNightCycle
     {
