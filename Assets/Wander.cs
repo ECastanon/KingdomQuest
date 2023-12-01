@@ -125,8 +125,8 @@ public class Wander : MonoBehaviour
         {
             if(wasInDeadEnd == true)
             {
-                return;
                 wasInDeadEnd = false;
+                return;
             }
             Debug.Log("Out of Bounds! Fixing Location!");
             List<GameObject> straights = new List<GameObject>();
