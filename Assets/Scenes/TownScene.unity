@@ -4914,6 +4914,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldCount: 1500
+  foodCount: 250
+  happyCount: 100
   roadCost: 5
   houseCost: 25
   merchantCost: 125

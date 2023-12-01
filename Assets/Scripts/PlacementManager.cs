@@ -123,7 +123,7 @@ public class PlacementManager : MonoBehaviour
         }
         if (type == CellType.merchantStructure)
         {
-            if (0 > resourceManager.goldCount - resourceManager.houseCost)
+            if (0 > resourceManager.goldCount - resourceManager.merchantCost)
             {
                 Debug.Log("Cannot afford this!");
                 return;
@@ -131,7 +131,7 @@ public class PlacementManager : MonoBehaviour
         }
         if (type == CellType.farmStructure)
         {
-            if (0 > resourceManager.goldCount - resourceManager.houseCost)
+            if (0 > resourceManager.goldCount - resourceManager.farmCost)
             {
                 Debug.Log("Cannot afford this!");
                 return;

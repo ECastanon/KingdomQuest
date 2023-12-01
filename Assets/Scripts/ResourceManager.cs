@@ -8,9 +8,9 @@ public class ResourceManager : MonoBehaviour
     private TextMeshProUGUI goldtxt;
     private TextMeshProUGUI foodtxt;
     private TextMeshProUGUI happytxt;
-    public int goldCount; //Total Gold Count
-    public int foodCount;
-    public int happyCount;
+    public float goldCount; //Total Gold Count
+    public float foodCount;
+    public float happyCount;
 
     //Structure Costs
     [Header("Structure Costs")]
