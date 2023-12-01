@@ -121,6 +121,22 @@ public class PlacementManager : MonoBehaviour
                 return;
             }
         }
+        if (type == CellType.merchantStructure)
+        {
+            if (0 > resourceManager.goldCount - resourceManager.houseCost)
+            {
+                Debug.Log("Cannot afford this!");
+                return;
+            }
+        }
+        if (type == CellType.farmStructure)
+        {
+            if (0 > resourceManager.goldCount - resourceManager.houseCost)
+            {
+                Debug.Log("Cannot afford this!");
+                return;
+            }
+        }
         placementGrid[position.x, position.z] = type;
         StructureModel structure = CreateNewStructureModel(position, structurePrefab, type);
         structDict.Add(position, structure);
@@ -154,6 +170,14 @@ public class PlacementManager : MonoBehaviour
         {
             resourceManager.goldCount -= resourceManager.houseCost;
             peopleManager.population += 1;
+        }
+        if (type == CellType.merchantStructure)
+        {
+            resourceManager.goldCount -= resourceManager.merchantCost;
+        }
+        if (type == CellType.farmStructure)
+        {
+            resourceManager.goldCount -= resourceManager.farmCost;
         }
         resourceManager.UpdateGold();
         peopleManager.UpdatePeople();

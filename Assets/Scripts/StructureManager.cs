@@ -9,6 +9,8 @@ public class StructureManager : MonoBehaviour
     private PlacementManager pm;
     public List<GameObject> housePrefabs;
     public List<GameObject> specialPrefabs;
+    public List<GameObject> merchantPrefabs;
+    public List<GameObject> farmPrefabs;
 
     private void Start()
     {
@@ -31,6 +33,24 @@ public class StructureManager : MonoBehaviour
         {
             int rand = Random.Range(0, specialPrefabs.Count);
             pm.PlaceOnMap(position, specialPrefabs[rand], CellType.Structure);
+            AudioPlayer.instance.PlayPlacementSound();
+        }
+    }
+    public void PlaceMerchant(Vector3Int position) //Passes special information to PlacementManager
+    {
+        if (CheckPositionBeforePlacement(position))
+        {
+            int rand = Random.Range(0, merchantPrefabs.Count);
+            pm.PlaceOnMap(position, merchantPrefabs[rand], CellType.merchantStructure);
+            AudioPlayer.instance.PlayPlacementSound();
+        }
+    }
+    public void PlaceFarm(Vector3Int position) //Passes special information to PlacementManager
+    {
+        if (CheckPositionBeforePlacement(position))
+        {
+            int rand = Random.Range(0, farmPrefabs.Count);
+            pm.PlaceOnMap(position, farmPrefabs[rand], CellType.farmStructure);
             AudioPlayer.instance.PlayPlacementSound();
         }
     }

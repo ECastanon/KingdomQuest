@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
         uc.OnRoadPlacement += RoadPlacementHandler; //Clicks will place roads
         uc.OnHousePlacement += HousePlacementHandler; //Clicks will place houses
         uc.OnSpecialPlacement += SpecialPlacementHandler;
+        uc.OnMerchantPlacement += MerchantPlacementHandler;
+        uc.OnFarmPlacement += FarmPlacementHandler;
     }
 
     private void RoadPlacementHandler()
@@ -44,6 +46,22 @@ public class GameManager : MonoBehaviour
 
         im.OnMouseClick += sm.PlaceSpecial;
         im.OnMouseHold += sm.PlaceSpecial;
+        im.OnMouseUp += rm.FinishPlacingRoad;
+    }
+    private void MerchantPlacementHandler()
+    {
+        ClearInputActions();
+
+        im.OnMouseClick += sm.PlaceMerchant;
+        im.OnMouseHold += sm.PlaceMerchant;
+        im.OnMouseUp += rm.FinishPlacingRoad;
+    }
+    private void FarmPlacementHandler()
+    {
+        ClearInputActions();
+
+        im.OnMouseClick += sm.PlaceFarm;
+        im.OnMouseHold += sm.PlaceFarm;
         im.OnMouseUp += rm.FinishPlacingRoad;
     }
     private void ClearInputActions()

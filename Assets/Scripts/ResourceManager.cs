@@ -12,6 +12,8 @@ public class ResourceManager : MonoBehaviour
     [Header("Structure Costs")]
     public int roadCost;
     public int houseCost;
+    public int merchantCost;
+    public int farmCost;
 
     void Start()
     {

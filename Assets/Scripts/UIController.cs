@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    public Action OnRoadPlacement, OnHousePlacement, OnSpecialPlacement;
-    private Button roadButton, houseButton, specialButton;
+    public Action OnRoadPlacement, OnHousePlacement, OnSpecialPlacement, OnMerchantPlacement, OnFarmPlacement;
+    private Button roadButton, houseButton, specialButton, merchantButton, farmButton;
     private GameObject warningPanel;
 
     public Color outlineColor;
@@ -18,11 +18,13 @@ public class UIController : MonoBehaviour
         roadButton = GameObject.Find("PlaceRoadBtn").GetComponent<Button>();
         houseButton = GameObject.Find("PlaceHouseBtn").GetComponent<Button>();
         specialButton = GameObject.Find("PlaceSpecialBtn").GetComponent<Button>();
+        merchantButton = GameObject.Find("PlaceMerchantBtn").GetComponent<Button>();
+        farmButton = GameObject.Find("PlaceFarmBtn").GetComponent<Button>();
 
         warningPanel = GameObject.Find("WarningPanel");
         warningPanel.SetActive(false);
 
-        buttonList = new List<Button>(){roadButton, houseButton, specialButton};
+        buttonList = new List<Button>(){roadButton, houseButton, specialButton, merchantButton, farmButton};
 
         //Sets the button actions
         roadButton.onClick.AddListener(() =>
@@ -59,6 +61,18 @@ public class UIController : MonoBehaviour
             ResetColor();
             ModifyOutLine(specialButton);
             OnSpecialPlacement?.Invoke();
+        });
+        merchantButton.onClick.AddListener(() =>
+        {
+            ResetColor();
+            ModifyOutLine(merchantButton);
+            OnMerchantPlacement?.Invoke();
+        });
+        farmButton.onClick.AddListener(() =>
+        {
+            ResetColor();
+            ModifyOutLine(farmButton);
+            OnFarmPlacement?.Invoke();
         });
     }
     private void ModifyOutLine(Button button)

@@ -52,6 +52,8 @@ public enum CellType
     Road,
     Structure,
     SpecialStructure,
+    merchantStructure,
+    farmStructure,
     None
 }
 
