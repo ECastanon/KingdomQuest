@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1809051, g: 0.22645304, b: 0.30723083, a: 1}
+  m_IndirectSpecularColor: {r: 0.18090543, g: 0.22645362, b: 0.30723208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,9 +132,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1000517574402004, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353057868215524, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01b_PRE (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950603029380038, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4439677966222154, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_LocalScale.x
@@ -207,9 +223,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -425,9 +457,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -606,9 +654,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -681,9 +745,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -761,6 +841,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Env_Rocks_Sand_01a_PRE 1
       objectReference: {fileID: 0}
+    - target: {fileID: 595396571411051055, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690253742953116507, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1217800081425601220, guid: 7047333101afc3d48858afc31465c8cd,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -826,6 +916,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2678869997444310757, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3764409690841511421, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -845,9 +945,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -920,9 +1036,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1000517574402004, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353057868215524, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01b_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950603029380038, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4439677966222154, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_LocalScale.x
@@ -995,9 +1127,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -1196,6 +1344,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 5540952880196186554, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5634350871582001816, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1261,10 +1414,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5636605212261694674, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01c_PRE Variant 1 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1285,9 +1458,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -1425,10 +1614,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5451817549551735370, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150272752398793195, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6384736095488388072, guid: f55523e847e5bc340b3753a7c13b8cf9,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Rocks_Sand_01c_PRE 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384736095488388072, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478090698301160360, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1449,9 +1658,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1000517574402004, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353057868215524, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01b_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950603029380038, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4439677966222154, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_LocalScale.x
@@ -1589,10 +1814,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5451817549551735370, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150272752398793195, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6384736095488388072, guid: f55523e847e5bc340b3753a7c13b8cf9,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Rocks_Sand_01c_PRE 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384736095488388072, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478090698301160360, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1613,9 +1858,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -1948,9 +2209,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -2288,10 +2565,20 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5636605212261694674, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
@@ -2303,10 +2590,20 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2327,9 +2624,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -2467,10 +2780,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5636605212261694674, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01c_PRE Variant 1 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2742,9 +3075,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -2817,9 +3166,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -2892,6 +3257,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 2764339317776326214, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689894225399289326, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220530726580613151, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6314264045718581008, guid: 4a6c52a3952f01b4da56886399b4d16c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2910,7 +3290,7 @@ PrefabInstance:
     - target: {fileID: 6314264045718581008, guid: 4a6c52a3952f01b4da56886399b4d16c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.35855493
+      value: -0.378
       objectReference: {fileID: 0}
     - target: {fileID: 6314264045718581008, guid: 4a6c52a3952f01b4da56886399b4d16c,
         type: 3}
@@ -2920,7 +3300,7 @@ PrefabInstance:
     - target: {fileID: 6314264045718581008, guid: 4a6c52a3952f01b4da56886399b4d16c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.16631693
+      value: -0.045
       objectReference: {fileID: 0}
     - target: {fileID: 6314264045718581008, guid: 4a6c52a3952f01b4da56886399b4d16c,
         type: 3}
@@ -2957,10 +3337,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7582954908161743638, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8862109572531477482, guid: 4a6c52a3952f01b4da56886399b4d16c,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01a_PRE 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862109572531477482, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2981,9 +3371,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -3121,10 +3527,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5636605212261694674, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01c_PRE Variant 1 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3145,9 +3571,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1000517574402004, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353057868215524, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01b_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1803532657506402, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950603029380038, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4439677966222154, guid: 5827c056f5346d343a714a0d39cae834, type: 3}
       propertyPath: m_LocalScale.x
@@ -3285,10 +3727,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5636605212261694674, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01c_PRE Variant 1 1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3431,6 +3893,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 2764339317776326214, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689894225399289326, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220530726580613151, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6314264045718581008, guid: 4a6c52a3952f01b4da56886399b4d16c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3501,6 +3978,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01a_PRE 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8862109572531477482, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3520,9 +4002,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -3696,6 +4194,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 2764339317776326214, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689894225399289326, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220530726580613151, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6314264045718581008, guid: 4a6c52a3952f01b4da56886399b4d16c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3765,6 +4278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01a_PRE 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862109572531477482, guid: 4a6c52a3952f01b4da56886399b4d16c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3928,9 +4446,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -4004,7 +4538,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1144530107}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Nature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4078,9 +4612,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -4369,9 +4919,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -4627,9 +5193,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -4767,10 +5349,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5636605212261694674, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01c_PRE Variant 1 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4795,6 +5397,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Rocks_Sand_01a_PRE 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 595396571411051055, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690253742953116507, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1217800081425601220, guid: 7047333101afc3d48858afc31465c8cd,
         type: 3}
@@ -4861,6 +5473,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2678869997444310757, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3764409690841511421, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4880,9 +5502,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -5107,9 +5745,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1148466472673974, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1339079742259344, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_Dry_01a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789207678412788, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804274111605116, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4094916363087742, guid: 47555e4f5572b0d4c94e95b1b8d25596, type: 3}
       propertyPath: m_LocalScale.x
@@ -5182,6 +5836,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1057248570060234141, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2518844826896693048, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4024295207027221629, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5247,10 +5911,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5117993356420303891, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8862978106945542449, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Rocks_Sand_01d_PRE 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862978106945542449, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5271,9 +5945,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -5289,7 +5979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.41017896
+      value: 0.328
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5297,7 +5987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.007908758
+      value: 0.044
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5346,9 +6036,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1651562863305014, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750209811193828, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_Name
       value: EA04_Env_Plants_Grass_01a_PRE (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1815559426911632, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900427138777384, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4462071481596022, guid: 6dcf98e9e264196439c4ce7e1c2ea192, type: 3}
       propertyPath: m_LocalScale.x
@@ -5491,10 +6197,20 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5636605212261694674, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5636898580358246564, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
@@ -5506,10 +6222,20 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5637378891825400060, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637553523705673556, guid: 31b4562ef8815ea4ab402e17a579f795,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5690,6 +6416,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EA04_Env_Plants_Cactus_01b_PRE
       objectReference: {fileID: 0}
+    - target: {fileID: 3118299926983031423, guid: 09ab206b6f03b7447a6d6991615687b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3236412034191473440, guid: 09ab206b6f03b7447a6d6991615687b7,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5708,7 +6439,7 @@ PrefabInstance:
     - target: {fileID: 3236412034191473440, guid: 09ab206b6f03b7447a6d6991615687b7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.39644778
+      value: 0.318
       objectReference: {fileID: 0}
     - target: {fileID: 3236412034191473440, guid: 09ab206b6f03b7447a6d6991615687b7,
         type: 3}
@@ -5718,7 +6449,7 @@ PrefabInstance:
     - target: {fileID: 3236412034191473440, guid: 09ab206b6f03b7447a6d6991615687b7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.023843704
+      value: 0.051
       objectReference: {fileID: 0}
     - target: {fileID: 3236412034191473440, guid: 09ab206b6f03b7447a6d6991615687b7,
         type: 3}
@@ -5755,6 +6486,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3864363690494305145, guid: 09ab206b6f03b7447a6d6991615687b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7716324346121798501, guid: 09ab206b6f03b7447a6d6991615687b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911791673933936016, guid: 09ab206b6f03b7447a6d6991615687b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5772,6 +6518,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Rocks_Sand_01a_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 595396571411051055, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 690253742953116507, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1217800081425601220, guid: 7047333101afc3d48858afc31465c8cd,
         type: 3}
@@ -5838,6 +6594,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2678869997444310757, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3764409690841511421, guid: 7047333101afc3d48858afc31465c8cd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5857,6 +6623,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144530107}
     m_Modifications:
+    - target: {fileID: 1057248570060234141, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2518844826896693048, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4024295207027221629, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5922,10 +6698,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5117993356420303891, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8862978106945542449, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Rocks_Sand_01d_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862978106945542449, guid: 7fbe8122d0b1ec24491e602f3eda32b0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6011,10 +6797,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5451817549551735370, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150272752398793195, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6384736095488388072, guid: f55523e847e5bc340b3753a7c13b8cf9,
         type: 3}
       propertyPath: m_Name
       value: EA04_Env_Rocks_Sand_01c_PRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384736095488388072, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478090698301160360, guid: f55523e847e5bc340b3753a7c13b8cf9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
