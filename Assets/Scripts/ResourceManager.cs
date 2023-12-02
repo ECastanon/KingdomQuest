@@ -10,9 +10,14 @@ public class ResourceManager : MonoBehaviour
     private TextMeshProUGUI goldtxt;
     private TextMeshProUGUI foodtxt;
     private TextMeshProUGUI happytxt;
+    private TextMeshProUGUI gpmtxt;
+    private TextMeshProUGUI fpmtxt;
     public int goldCount; //Total Gold Count
     public int foodCount;
     public int happyCount;
+
+    private int gpm = 1;
+    private int fpm = 0;
 
     //Structure Costs
     [Header("Structure Costs")]
@@ -38,6 +43,8 @@ public class ResourceManager : MonoBehaviour
         goldtxt = GameObject.Find("goldtxt").GetComponent<TextMeshProUGUI>();
         foodtxt = GameObject.Find("foodtxt").GetComponent<TextMeshProUGUI>();
         happytxt = GameObject.Find("happytxt").GetComponent<TextMeshProUGUI>();
+        gpmtxt = GameObject.Find("gpmtxt").GetComponent<TextMeshProUGUI>();
+        fpmtxt = GameObject.Find("fpmtxt").GetComponent<TextMeshProUGUI>();
 
     }
     void Update()
@@ -64,14 +71,27 @@ public class ResourceManager : MonoBehaviour
             {
                 happyCount -= 3;
             }
+            if(foodCount > houseCount*20 && happyCount < 100)
+            {
+                happyCount++;
+            }
         }
     }
     public void UpdateGold()
     {
+        gpmtxt.text = "(+" + gpm*merchantCount*2 + ")";
         goldtxt.text = "Gold: " + goldCount;
     }
     public void UpdateFood()
     {
+        if(fpm - houseCount + farmCount * 5 < 0)
+        {
+            fpmtxt.text = "(" + (fpm - houseCount + farmCount * 5) + ")";
+        }
+        else
+        {
+            fpmtxt.text = "(+" + (fpm - houseCount + farmCount * 5) + ")";
+        }
         foodtxt.text = "Food: " + foodCount;
     }
     public void UpdateHappy()
