@@ -176,6 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 764906619791085493}
   - component: {fileID: 2267995481082731955}
+  - component: {fileID: -8659944801045863363}
   m_Layer: 6
   m_Name: EA04_Env_Rocks_Sand_01c_PRE 1
   m_TagString: Untagged
@@ -228,6 +229,28 @@ LODGroup:
     renderers:
     - renderer: {fileID: 5813043707980299160}
   m_Enabled: 1
+--- !u!64 &-8659944801045863363
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6384736095488388072}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
 --- !u!1 &8478090698301160360
 GameObject:
   m_ObjectHideFlags: 0

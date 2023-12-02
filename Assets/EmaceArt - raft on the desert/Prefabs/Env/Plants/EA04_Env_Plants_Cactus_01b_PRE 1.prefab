@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3236412034191473440}
   - component: {fileID: 1512193043260736429}
+  - component: {fileID: -600168211642859766}
   m_Layer: 6
   m_Name: EA04_Env_Plants_Cactus_01b_PRE 1
   m_TagString: Untagged
@@ -62,6 +63,28 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6294523352010052325}
   m_Enabled: 1
+--- !u!64 &-600168211642859766
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118299926983031423}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: e4473e54f875dd14e9e7bdd6b9ab66ef, type: 3}
 --- !u!1 &3864363690494305145
 GameObject:
   m_ObjectHideFlags: 0

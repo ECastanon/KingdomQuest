@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4988941463352562}
   - component: {fileID: 205658086288531200}
+  - component: {fileID: -2109079871184035636}
   m_Layer: 6
   m_Name: EA04_Env_Plants_Grass_Dry_01b_PRE
   m_TagString: Untagged
@@ -145,6 +146,28 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23607358747825508}
   m_Enabled: 1
+--- !u!64 &-2109079871184035636
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380520181036076}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: 27d1aee1fb747cd4eaf53d00fb2dc9d9, type: 3}
 --- !u!1 &1855096698514286
 GameObject:
   m_ObjectHideFlags: 0
