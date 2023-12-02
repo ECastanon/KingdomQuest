@@ -39,6 +39,7 @@ public class StructureModel : MonoBehaviour
     {
         if (obj.tag == "house")
         {
+
             int rand = Random.Range(0, GameObject.Find("PeopleList").GetComponent<PeopleList>().citizenPrefabs.Count);
             GameObject civ = Instantiate(GameObject.Find("PeopleList").GetComponent<PeopleList>().citizenPrefabs[rand], transform);
             civ.transform.SetParent(GameObject.Find("PeopleList").transform);

@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class ResourceManager : MonoBehaviour
 {
+    private static ResourceManager instance;
     private TextMeshProUGUI goldtxt;
     private TextMeshProUGUI foodtxt;
     private TextMeshProUGUI happytxt;
-    public float goldCount; //Total Gold Count
-    public float foodCount;
-    public float happyCount;
+    public int goldCount; //Total Gold Count
+    public int foodCount;
+    public int happyCount;
 
     //Structure Costs
     [Header("Structure Costs")]
@@ -19,14 +21,50 @@ public class ResourceManager : MonoBehaviour
     public int merchantCost;
     public int farmCost;
 
+    private float timer = 0f;
+    public float delayAmount;
+    public int houseCount;
+    public int merchantCount;
+    public int farmCount;
+    public int specialCount;
+    
+    private void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         goldtxt = GameObject.Find("goldtxt").GetComponent<TextMeshProUGUI>();
         foodtxt = GameObject.Find("foodtxt").GetComponent<TextMeshProUGUI>();
         happytxt = GameObject.Find("happytxt").GetComponent<TextMeshProUGUI>();
+
+    }
+    void Update()
+    {
         UpdateGold();
         UpdateFood();
         UpdateHappy();
+        timer += Time.deltaTime;
+
+        if (timer >= delayAmount)
+        {
+            timer = 0f;
+            foodCount += farmCount * 5;
+            goldCount += merchantCount * 2;
+            if (foodCount > 0) 
+            {
+            foodCount -= houseCount;
+            }
+            if(foodCount < 25)
+            {
+                happyCount--;
+            }
+            if(foodCount == 0)
+            {
+                happyCount -= 3;
+            }
+        }
     }
     public void UpdateGold()
     {
@@ -44,4 +82,9 @@ public class ResourceManager : MonoBehaviour
     {
         //Play any functions that trigger at the start of a day
     }
+    public void incrementHouse()
+    {
+        houseCount++;
+    }
+
 }

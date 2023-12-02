@@ -168,15 +168,18 @@ public class PlacementManager : MonoBehaviour
         }
         if(type == CellType.Structure)
         {
+            resourceManager.houseCount++;
             resourceManager.goldCount -= resourceManager.houseCost;
             peopleManager.population += 1;
         }
         if (type == CellType.merchantStructure)
         {
+            resourceManager.merchantCount++;
             resourceManager.goldCount -= resourceManager.merchantCost;
         }
         if (type == CellType.farmStructure)
         {
+            resourceManager.farmCount++;
             resourceManager.goldCount -= resourceManager.farmCost;
         }
         resourceManager.UpdateGold();
