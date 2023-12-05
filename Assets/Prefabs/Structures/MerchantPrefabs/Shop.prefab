@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 7895479531754544357}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: merchant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,6 +242,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd5cd6471abfd154d818737c55c3e646,
+        type: 3}
+      propertyPath: m_TagString
+      value: merchant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
