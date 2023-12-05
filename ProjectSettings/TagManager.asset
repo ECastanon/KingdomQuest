@@ -6,6 +6,8 @@ TagManager:
   tags:
   - house
   - road
+  - merchant
+  - special
   layers:
   - Default
   - TransparentFX

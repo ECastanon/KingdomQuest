@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 64208363408701164}
   m_Layer: 0
   m_Name: stall 2
-  m_TagString: Untagged
+  m_TagString: merchant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
