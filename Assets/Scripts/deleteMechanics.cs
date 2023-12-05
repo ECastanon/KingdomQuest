@@ -3,20 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-
-
 public class deleteMechanics : MonoBehaviour
 {
     public ResourceManager resourceManager; 
-    // Define the default models for the objects you want to delete
     private string[] defaultModelsToDelete = { "road", "house", "merchant", "special" };
-
-    // Use this array in case you don't set custom models in the Inspector
     public string[] modelsToDelete;
+    private int i = 0;
+    
 
     void Start()
     {
-        // If no custom models are set in the Inspector, use the default models
         if (modelsToDelete == null || modelsToDelete.Length == 0)
         {
             modelsToDelete = defaultModelsToDelete;
@@ -25,34 +21,51 @@ public class deleteMechanics : MonoBehaviour
 
     void Update()
     {
-        // Check if the left mouse button is pressed and the Ctrl key is held down
         if (Input.GetMouseButtonDown(0) && Input.GetKey(KeyCode.LeftControl))
         {
-            // Cast a ray from the mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            // Check if the ray hits any objects
             if (Physics.Raycast(ray, out hit))
             {
-                // Check if the hit object has one of the specified models
-                if (hit.collider != null && Array.Exists(modelsToDelete, model => hit.collider.gameObject.tag.Equals(model)))
+                // Check the hit object and its parents for the specified models
+                Transform currentTransform = hit.transform;
+                while (currentTransform != null)
                 {
-                    Debug.Log("Deleting model with tag: " + hit.collider.gameObject.tag);
-                    if (hit.collider.gameObject.tag == "road") {
-                        resourceManager.goldCount += resourceManager.roadCost;
+                    if (Array.Exists(modelsToDelete, model => currentTransform.tag.Equals(model)))
+                    {
+                        Debug.Log("Deleting model with tag: " + currentTransform.tag);
+                        if (currentTransform.tag == "road") {
+                            resourceManager.goldCount += resourceManager.roadCost;
+                        }
+                        if (currentTransform.tag == "house") {
+                            i++;
+                            resourceManager.goldCount += resourceManager.houseCost;
+                            if (i == 2 ) {
+                              resourceManager.goldCount -= resourceManager.houseCost;
+                              i = 0;
+                            }
+                        }
+                        if (currentTransform.tag == "special") {
+                            i++;
+                            resourceManager.goldCount += resourceManager.houseCost;
+                            if (i == 2 ) {
+                              resourceManager.goldCount -= resourceManager.houseCost;
+                              i = 0;
+                            }
+                            
+                        }
+                        if (currentTransform.tag == "merchant") {
+                            resourceManager.goldCount += resourceManager.merchantCost;
+                        }
+                        Destroy(currentTransform.gameObject);
                     }
-                    if (hit.collider.gameObject.tag == "house") {
-                        resourceManager.goldCount += resourceManager.houseCost;
-                    }
-                    if (hit.collider.gameObject.tag == "special") {
-                        resourceManager.goldCount += resourceManager.houseCost;
-                    }
-                    if (hit.collider.gameObject.tag == "merchant") {
-                        resourceManager.goldCount += resourceManager.merchantCost;
-                    }
-                    // Delete the object
-                    Destroy(hit.collider.gameObject);
+
+                    // Move to the parent transform
+                    Debug.Log("moving to parent");
+                    //resourceManager.goldCount -= resourceManager.houseCost;
+                    currentTransform = currentTransform.parent;
+                    
                 }
             }
         }
