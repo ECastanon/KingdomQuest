@@ -11,6 +11,7 @@ public class StructureManager : MonoBehaviour
     public List<GameObject> specialPrefabs;
     public List<GameObject> merchantPrefabs;
     public List<GameObject> farmPrefabs;
+    public List<GameObject> hospitalPrefabs;
 
     private void Start()
     {
@@ -36,7 +37,7 @@ public class StructureManager : MonoBehaviour
             AudioPlayer.instance.PlayPlacementSound();
         }
     }
-    public void PlaceMerchant(Vector3Int position) //Passes special information to PlacementManager
+    public void PlaceMerchant(Vector3Int position) //Passes merchant information to PlacementManager
     {
         if (CheckPositionBeforePlacement(position))
         {
@@ -45,12 +46,21 @@ public class StructureManager : MonoBehaviour
             AudioPlayer.instance.PlayPlacementSound();
         }
     }
-    public void PlaceFarm(Vector3Int position) //Passes special information to PlacementManager
+    public void PlaceFarm(Vector3Int position) //Passes farm information to PlacementManager
     {
         if (CheckPositionBeforePlacement(position))
         {
             int rand = Random.Range(0, farmPrefabs.Count);
             pm.PlaceOnMap(position, farmPrefabs[rand], CellType.farmStructure);
+            AudioPlayer.instance.PlayPlacementSound();
+        }
+    }
+    public void PlaceHospital(Vector3Int position) //Passes hospital information to PlacementManager
+    {
+        if (CheckPositionBeforePlacement(position))
+        {
+            int rand = Random.Range(0, hospitalPrefabs.Count);
+            pm.PlaceOnMap(position, hospitalPrefabs[rand], CellType.hospitalStructure);
             AudioPlayer.instance.PlayPlacementSound();
         }
     }

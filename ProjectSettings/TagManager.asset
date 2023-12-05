@@ -8,6 +8,7 @@ TagManager:
   - road
   - merchant
   - special
+  - hospital
   layers:
   - Default
   - TransparentFX

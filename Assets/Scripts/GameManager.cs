@@ -19,9 +19,9 @@ public class GameManager : MonoBehaviour
         //Selects the type to place after selecting a button
         uc.OnRoadPlacement += RoadPlacementHandler; //Clicks will place roads
         uc.OnHousePlacement += HousePlacementHandler; //Clicks will place houses
-        uc.OnSpecialPlacement += SpecialPlacementHandler;
         uc.OnMerchantPlacement += MerchantPlacementHandler;
         uc.OnFarmPlacement += FarmPlacementHandler;
+        uc.OnHospitalPlacement += HospitalPlacementHandler;
     }
 
     private void RoadPlacementHandler()
@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour
 
         im.OnMouseClick += sm.PlaceHouse;
         im.OnMouseHold += sm.PlaceHouse;
-        im.OnMouseUp += rm.FinishPlacingRoad;
     }
     private void SpecialPlacementHandler()
     {
@@ -46,7 +45,6 @@ public class GameManager : MonoBehaviour
 
         im.OnMouseClick += sm.PlaceSpecial;
         im.OnMouseHold += sm.PlaceSpecial;
-        im.OnMouseUp += rm.FinishPlacingRoad;
     }
     private void MerchantPlacementHandler()
     {
@@ -54,7 +52,6 @@ public class GameManager : MonoBehaviour
 
         im.OnMouseClick += sm.PlaceMerchant;
         im.OnMouseHold += sm.PlaceMerchant;
-        im.OnMouseUp += rm.FinishPlacingRoad;
     }
     private void FarmPlacementHandler()
     {
@@ -62,7 +59,13 @@ public class GameManager : MonoBehaviour
 
         im.OnMouseClick += sm.PlaceFarm;
         im.OnMouseHold += sm.PlaceFarm;
-        im.OnMouseUp += rm.FinishPlacingRoad;
+    }
+    private void HospitalPlacementHandler()
+    {
+        ClearInputActions();
+
+        im.OnMouseClick += sm.PlaceHospital;
+        im.OnMouseHold += sm.PlaceHospital;
     }
     private void ClearInputActions()
     {

@@ -137,6 +137,15 @@ public class PlacementManager : MonoBehaviour
                 return;
             }
         }
+        if (type == CellType.hospitalStructure)
+        {
+            if (0 > resourceManager.goldCount - resourceManager.hospitalCost)
+            {
+                Debug.Log("Cannot afford this!");
+                return;
+            }
+        }
+        
         placementGrid[position.x, position.z] = type;
         StructureModel structure = CreateNewStructureModel(position, structurePrefab, type);
         structDict.Add(position, structure);
@@ -181,6 +190,11 @@ public class PlacementManager : MonoBehaviour
         {
             resourceManager.farmCount++;
             resourceManager.goldCount -= resourceManager.farmCost;
+        }
+        if (type == CellType.hospitalStructure)
+        {
+            resourceManager.hospitalCount++;
+            resourceManager.goldCount -= resourceManager.hospitalCost;
         }
         resourceManager.UpdateGold();
         peopleManager.UpdatePeople();

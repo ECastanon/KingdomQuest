@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.UI;
 
 public class ResourceManager : MonoBehaviour
 {
     private static ResourceManager instance;
-    private TextMeshProUGUI goldtxt;
-    private TextMeshProUGUI foodtxt;
-    private TextMeshProUGUI happytxt;
-    private TextMeshProUGUI gpmtxt;
-    private TextMeshProUGUI fpmtxt;
-    public int goldCount; //Total Gold Count
-    public int foodCount;
-    public int happyCount;
+    private TextMeshProUGUI goldtxt, foodtxt, happytxt, healthtxt; //Text Objects
+    private GameObject peopleList;
+    private NotificationPopup notif;
+    private Image foodBar, healthBar, happyBar;
 
+    [Header("Town Resources")]
+    public int goldCount; //Total Gold Count
     private int gpm = 1;
-    private int fpm = 0;
+    public float foodCount;
+    public float happyCount;
+    public float healthValue;
 
     //Structure Costs
     [Header("Structure Costs")]
@@ -25,13 +26,24 @@ public class ResourceManager : MonoBehaviour
     public int houseCost;
     public int merchantCost;
     public int farmCost;
+    public int hospitalCost;
+    [Header("Structure Variables")]
+    public int merchantProduction = 10; //Money a single merchant will produce
+    public int farmProduction = 5; //Number of people a single farm can supply
+    public int hospitalEffectiveness = 5; //Number of people a hospital can supply
 
-    private float timer = 0f;
-    public float delayAmount;
+    [Header("Structure Counts")]
     public int houseCount;
     public int merchantCount;
-    public int farmCount;
+    public float farmCount;
     public int specialCount;
+    public float hospitalCount;
+    
+    [Header("Timers")]
+    public float timer = 0f;
+    public float delayAmount = 5;
+    public float notifTimer = 0f;
+    public float notifDelayAmount = 20f;
     
     private void Awake()
     {
@@ -42,61 +54,86 @@ public class ResourceManager : MonoBehaviour
     {
         goldtxt = GameObject.Find("goldtxt").GetComponent<TextMeshProUGUI>();
         foodtxt = GameObject.Find("foodtxt").GetComponent<TextMeshProUGUI>();
+        healthtxt = GameObject.Find("healthtxt").GetComponent<TextMeshProUGUI>();
         happytxt = GameObject.Find("happytxt").GetComponent<TextMeshProUGUI>();
-        gpmtxt = GameObject.Find("gpmtxt").GetComponent<TextMeshProUGUI>();
-        fpmtxt = GameObject.Find("fpmtxt").GetComponent<TextMeshProUGUI>();
+        peopleList = GameObject.Find("PeopleList");
+        notif = GameObject.Find("NotificationPanel ").GetComponent<NotificationPopup>();
+
+        //Get Bars
+        foodBar = GameObject.Find("FoodBar").GetComponent<Image>();
+        healthBar = GameObject.Find("HealthBar").GetComponent<Image>();
+        happyBar = GameObject.Find("HappyBar").GetComponent<Image>();
+        foodBar.fillAmount = 0; healthBar.fillAmount = 0; happyBar.fillAmount = 0;
 
     }
     void Update()
     {
         UpdateGold();
         UpdateFood();
+        UpdateHealth();
         UpdateHappy();
-        timer += Time.deltaTime;
-
-        if (timer >= delayAmount)
+        if(timer > delayAmount)
         {
-            timer = 0f;
-            foodCount += farmCount * 5;
-            goldCount += merchantCount * 2;
-            if (foodCount > 0) 
+            timer = 0;
+            gpm = merchantCount * merchantProduction;
+            goldCount += gpm;
+        } else {timer += Time.deltaTime;}
+        if(notifTimer > notifDelayAmount)
+        {
+            notifTimer = 0;
+            if(foodCount <= 60)
             {
-            foodCount -= houseCount;
+                notif.SlideInNotif("Food Reserves running low! Build more Farms!");
             }
-            if(foodCount < 25)
+            if(healthValue <= 60)
             {
-                happyCount--;
+                notif.SlideInNotif("Citizens need healthcare! Build more Hospitals!");
             }
-            if(foodCount == 0)
+            if(happyCount <= 50)
             {
-                happyCount -= 3;
+                notif.SlideInNotif("Your citizens are unhappy and threatening to leave!");
             }
-            if(foodCount > houseCount*20 && happyCount < 100)
-            {
-                happyCount++;
-            }
-        }
+        } else {notifTimer += Time.deltaTime;}
+    }
+    private int NumOfCitizens()
+    {
+        return peopleList.transform.childCount;
     }
     public void UpdateGold()
     {
-        gpmtxt.text = "(+" + gpm*merchantCount*2 + ")";
-        goldtxt.text = "Gold: " + goldCount;
+        goldtxt.text = "Gold: " + goldCount + " (+" + gpm + ")";
     }
     public void UpdateFood()
     {
-        if(fpm - houseCount + farmCount * 5 < 0)
+        if(NumOfCitizens() > 0)
         {
-            fpmtxt.text = "(" + (fpm - houseCount + farmCount * 5) + ")";
-        }
-        else
+            foodCount = ((farmCount * farmProduction) / NumOfCitizens()); //Converts into a percentage
+            foodBar.fillAmount = foodCount;
+            foodCount *= 100;
+            if(foodCount > 100){foodCount = 100;}
+            foodtxt.text = Mathf.RoundToInt(foodCount) + "%";
+        } else {foodtxt.text = "";}
+    }
+    private void UpdateHealth()
+    {
+        if(NumOfCitizens() > 0)
         {
-            fpmtxt.text = "(+" + (fpm - houseCount + farmCount * 5) + ")";
-        }
-        foodtxt.text = "Food: " + foodCount;
+            healthValue = ((hospitalCount * hospitalEffectiveness) / NumOfCitizens()); //Converts into a percentage
+            healthBar.fillAmount = healthValue;
+            healthValue *= 100;
+            if(healthValue > 100){healthValue = 100;}
+            healthtxt.text = Mathf.RoundToInt(healthValue) + "%";
+        } else {healthtxt.text = "";}
     }
     public void UpdateHappy()
     {
-        happytxt.text = "Happiness: " + happyCount + "%";
+        if(NumOfCitizens() > 0)
+        {
+            happyCount = ((foodCount + healthValue) / 200);
+            happyBar.fillAmount = happyCount;
+            happyCount *= 100;
+            happytxt.text = Mathf.RoundToInt(happyCount) + "%";
+        } else {happytxt.text = "";}
     }
     public void StartDay() //Called in DayNightCycle
     {
@@ -106,5 +143,4 @@ public class ResourceManager : MonoBehaviour
     {
         houseCount++;
     }
-
 }

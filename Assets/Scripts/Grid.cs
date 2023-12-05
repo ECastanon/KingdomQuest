@@ -54,6 +54,7 @@ public enum CellType
     SpecialStructure,
     merchantStructure,
     farmStructure,
+    hospitalStructure,
     None
 }
 

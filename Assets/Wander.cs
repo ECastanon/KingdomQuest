@@ -7,7 +7,6 @@ public class Wander : MonoBehaviour
     private bool canRotate = true;
     private float currentRotY;
     private bool wasInDeadEnd = false;
-
     void Update()
     {
         NotOnRoad();
@@ -24,7 +23,7 @@ public class Wander : MonoBehaviour
         {
             Debug.Log(col.gameObject.transform.parent.name);
             wasInDeadEnd = true;
-            StartCoroutine("ChangeDirection", 180);
+            StartCoroutine("Reverse", 180);
         }
         else if (col.gameObject.transform.parent.name == "CurvedRoad(Clone)")
         {
@@ -146,7 +145,6 @@ public class Wander : MonoBehaviour
                     straights.Add(road);
                 }
             }
-
             int rand = Random.Range(0, straights.Count);
             transform.position = new Vector3(straights[rand].transform.position.x, 0.02f, straights[rand].transform.position.z);
             transform.rotation = Quaternion.Euler(0, straights[rand].transform.localRotation.eulerAngles.y, 0);

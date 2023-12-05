@@ -6,10 +6,9 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    public Action OnRoadPlacement, OnHousePlacement, OnSpecialPlacement, OnMerchantPlacement, OnFarmPlacement;
-    private Button roadButton, houseButton, specialButton, merchantButton, farmButton;
+    public Action OnRoadPlacement, OnHousePlacement, OnMerchantPlacement, OnFarmPlacement, OnHospitalPlacement;
+    private Button roadButton, houseButton, merchantButton, farmButton, hospitalButton;
     private GameObject warningPanel;
-
     public Color outlineColor;
     List<Button> buttonList;
 
@@ -17,14 +16,14 @@ public class UIController : MonoBehaviour
     {
         roadButton = GameObject.Find("PlaceRoadBtn").GetComponent<Button>();
         houseButton = GameObject.Find("PlaceHouseBtn").GetComponent<Button>();
-        specialButton = GameObject.Find("PlaceSpecialBtn").GetComponent<Button>();
         merchantButton = GameObject.Find("PlaceMerchantBtn").GetComponent<Button>();
         farmButton = GameObject.Find("PlaceFarmBtn").GetComponent<Button>();
+        hospitalButton = GameObject.Find("PlaceHospitalBtn").GetComponent<Button>();
 
         warningPanel = GameObject.Find("WarningPanel");
         warningPanel.SetActive(false);
 
-        buttonList = new List<Button>() { roadButton, houseButton, specialButton, merchantButton, farmButton };
+        buttonList = new List<Button>() { roadButton, houseButton, merchantButton, farmButton, hospitalButton };
 
         //Sets the button actions
         roadButton.onClick.AddListener(() =>
@@ -67,25 +66,23 @@ public class UIController : MonoBehaviour
 
         });
 
-        specialButton.onClick.AddListener(() =>
-        {
-            ResetColor();
-            ModifyOutLine(specialButton);
-            OnSpecialPlacement?.Invoke();
-        });
-
         merchantButton.onClick.AddListener(() =>
         {
             ResetColor();
             ModifyOutLine(merchantButton);
             OnMerchantPlacement?.Invoke();
         });
-
         farmButton.onClick.AddListener(() =>
         {
             ResetColor();
             ModifyOutLine(farmButton);
             OnFarmPlacement?.Invoke();
+        });
+        hospitalButton.onClick.AddListener(() =>
+        {
+            ResetColor();
+            ModifyOutLine(hospitalButton);
+            OnHospitalPlacement?.Invoke();
         });
     }
 
