@@ -14541,7 +14541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5daff3c079fae944b893a2506b415bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placementSound: {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
+  placementSound: {fileID: 0}
   audioSource: {fileID: 1105030476}
 --- !u!82 &1105030476
 AudioSource:
@@ -14553,11 +14553,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_audioClip: {fileID: 8300000, guid: b4e03b819912ca746b68c6610bd537b3, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
