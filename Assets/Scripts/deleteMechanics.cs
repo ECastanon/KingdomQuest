@@ -7,6 +7,7 @@ using System;
 
 public class deleteMechanics : MonoBehaviour
 {
+    public ResourceManager resourceManager; 
     // Define the default models for the objects you want to delete
     private string[] defaultModelsToDelete = { "road", "house", "merchant", "special" };
 
@@ -37,6 +38,19 @@ public class deleteMechanics : MonoBehaviour
                 // Check if the hit object has one of the specified models
                 if (hit.collider != null && Array.Exists(modelsToDelete, model => hit.collider.gameObject.tag.Equals(model)))
                 {
+                    Debug.Log("Deleting model with tag: " + hit.collider.gameObject.tag);
+                    if (hit.collider.gameObject.tag == "road") {
+                        resourceManager.goldCount += resourceManager.roadCost;
+                    }
+                    if (hit.collider.gameObject.tag == "house") {
+                        resourceManager.goldCount += resourceManager.houseCost;
+                    }
+                    if (hit.collider.gameObject.tag == "special") {
+                        resourceManager.goldCount += resourceManager.houseCost;
+                    }
+                    if (hit.collider.gameObject.tag == "merchant") {
+                        resourceManager.goldCount += resourceManager.merchantCost;
+                    }
                     // Delete the object
                     Destroy(hit.collider.gameObject);
                 }
