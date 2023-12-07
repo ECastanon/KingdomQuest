@@ -12,6 +12,7 @@ public class ResourceManager : MonoBehaviour
     private NotificationPopup notif;
     private Image foodBar, healthBar, happyBar;
     private PeopleManager peopleManager;
+    public SpriteRenderer happySprite;
 
     [Header("Town Resources")]
     public int goldCount; //Total Gold Count
@@ -65,6 +66,7 @@ public class ResourceManager : MonoBehaviour
         foodBar = GameObject.Find("FoodBar").GetComponent<Image>();
         healthBar = GameObject.Find("HealthBar").GetComponent<Image>();
         happyBar = GameObject.Find("HappyBar").GetComponent<Image>();
+        happySprite = GameObject.Find("smile").GetComponent<SpriteRenderer>();
         foodBar.fillAmount = 0; healthBar.fillAmount = 0; happyBar.fillAmount = 0;
 
     }
@@ -141,6 +143,17 @@ public class ResourceManager : MonoBehaviour
             happyCount *= 100;
             happytxt.text = Mathf.RoundToInt(happyCount) + "%";
         } else {happytxt.text = "";}
+
+        if(happyCount >= 80) //Changes to happy face
+        {
+            happySprite.sprite = GameObject.Find("happy").GetComponent<SpriteRenderer>().sprite;
+        } else if(happyCount <= 50) //Changes to Unhappy face
+        {
+            happySprite.sprite = GameObject.Find("unhappy").GetComponent<SpriteRenderer>().sprite;
+        } else //Changes to neutral face
+        {
+            happySprite.sprite = GameObject.Find("neutral").GetComponent<SpriteRenderer>().sprite;
+        }
     }
     public void StartDay()
     {
