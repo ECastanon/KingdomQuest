@@ -9,9 +9,9 @@ public class ResourceManager : MonoBehaviour
 {
     private static ResourceManager instance;
     private TextMeshProUGUI goldtxt, foodtxt, happytxt, healthtxt; //Text Objects
-    private GameObject peopleList;
     private NotificationPopup notif;
     private Image foodBar, healthBar, happyBar;
+    private PeopleManager peopleManager;
 
     [Header("Town Resources")]
     public int goldCount; //Total Gold Count
@@ -44,6 +44,8 @@ public class ResourceManager : MonoBehaviour
     public float delayAmount = 5;
     public float notifTimer = 0f;
     public float notifDelayAmount = 20f;
+    public float dayTimer = 0;
+    public float dayDelayAmount = 60f;
     
     private void Awake()
     {
@@ -56,7 +58,7 @@ public class ResourceManager : MonoBehaviour
         foodtxt = GameObject.Find("foodtxt").GetComponent<TextMeshProUGUI>();
         healthtxt = GameObject.Find("healthtxt").GetComponent<TextMeshProUGUI>();
         happytxt = GameObject.Find("happytxt").GetComponent<TextMeshProUGUI>();
-        peopleList = GameObject.Find("PeopleList");
+        peopleManager = GameObject.Find("PeopleManager").GetComponent<PeopleManager>();
         notif = GameObject.Find("NotificationPanel ").GetComponent<NotificationPopup>();
 
         //Get Bars
@@ -94,10 +96,15 @@ public class ResourceManager : MonoBehaviour
                 notif.SlideInNotif("Your citizens are unhappy and threatening to leave!");
             }
         } else {notifTimer += Time.deltaTime;}
+        if(dayTimer > dayDelayAmount)
+        {
+            dayTimer = 0;
+            StartDay();
+        } else {dayTimer += Time.deltaTime;}
     }
     private int NumOfCitizens()
     {
-        return peopleList.transform.childCount;
+        return peopleManager.transform.childCount;
     }
     public void UpdateGold()
     {
@@ -135,9 +142,14 @@ public class ResourceManager : MonoBehaviour
             happytxt.text = Mathf.RoundToInt(happyCount) + "%";
         } else {happytxt.text = "";}
     }
-    public void StartDay() //Called in DayNightCycle
+    public void StartDay()
     {
         //Play any functions that trigger at the start of a day
+        if(NumOfCitizens() > 5)
+        {
+            peopleManager.PeopleEnter();
+            peopleManager.PeopleLeave();
+        }
     }
     public void incrementHouse()
     {

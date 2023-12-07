@@ -14,6 +14,5 @@ public class DayAndNightCycle : MonoBehaviour
     void Update()
     {
         myLight.intensity = Mathf.PingPong(Time.time/dayLength, 1.3f);
-        if(myLight.intensity <= 0){rm.GetComponent<ResourceManager>().StartDay();}
     }
 }

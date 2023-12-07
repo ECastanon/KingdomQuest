@@ -1008,7 +1008,6 @@ Transform:
   - {fileID: 500113472}
   - {fileID: 1890267256}
   - {fileID: 655317317}
-  - {fileID: 544212279}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &75374023
@@ -6026,7 +6025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -264.7, y: 102.6}
+  m_AnchoredPosition: {x: -264.7, y: 102.600006}
   m_SizeDelta: {x: -600, y: -430}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &460429664
@@ -7032,56 +7031,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 536697052}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &544212278
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 544212279}
-  - component: {fileID: 544212280}
-  m_Layer: 0
-  m_Name: PeopleList
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &544212279
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544212278}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 74727408}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &544212280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544212278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5fc625490b7608458ebf6f04b753d82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  citizenPrefabs:
-  - {fileID: 1797495521041591622, guid: af966047ab5795d41b5efcfe1583aec8, type: 3}
-  - {fileID: 8248499770048820602, guid: a8d6d4fc23b0a594aa49e2265a7a31aa, type: 3}
-  - {fileID: 6953530171354756996, guid: b2bbdb39c67b9534d9b46262bc449d9b, type: 3}
-  - {fileID: 1305481561351155312, guid: d8367e7cdcd6f004692f25ce8527f54d, type: 3}
-  - {fileID: 9057548118391391895, guid: 4b9d4c7fbbea385459954e9e4a718bb5, type: 3}
 --- !u!1 &545299296
 GameObject:
   m_ObjectHideFlags: 0
@@ -8347,6 +8296,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   population: 0
+  citizenPrefabs:
+  - {fileID: 1797495521041591622, guid: af966047ab5795d41b5efcfe1583aec8, type: 3}
+  - {fileID: 8248499770048820602, guid: a8d6d4fc23b0a594aa49e2265a7a31aa, type: 3}
+  - {fileID: 6953530171354756996, guid: b2bbdb39c67b9534d9b46262bc449d9b, type: 3}
+  - {fileID: 1305481561351155312, guid: d8367e7cdcd6f004692f25ce8527f54d, type: 3}
+  - {fileID: 9057548118391391895, guid: 4b9d4c7fbbea385459954e9e4a718bb5, type: 3}
+  peopleOnMap: []
 --- !u!1001 &664373808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22608,7 +22564,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 173.76997, y: -21.199997}
+  m_AnchoredPosition: {x: 173.76996, y: -21.200012}
   m_SizeDelta: {x: 426.4795, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590106886
@@ -22631,7 +22587,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Population:  0 '
+  m_text: 'Population:  0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
