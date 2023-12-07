@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1809051, g: 0.22645304, b: 0.30723083, a: 1}
+  m_IndirectSpecularColor: {r: 0.18090543, g: 0.22645362, b: 0.30723208, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 13982250}
   - component: {fileID: 13982252}
   - component: {fileID: 13982251}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: happytxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,8 +277,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175.92549, y: 0}
-  m_SizeDelta: {x: 145.0511, y: 22.175}
+  m_AnchoredPosition: {x: 126.46, y: 0}
+  m_SizeDelta: {x: 46.13, y: 22.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &13982251
 MonoBehaviour:
@@ -1142,7 +1142,7 @@ GameObject:
   - component: {fileID: 99318442}
   - component: {fileID: 99318441}
   - component: {fileID: 99318444}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: PlaceRoadBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1515,7 @@ GameObject:
   - component: {fileID: 136365569}
   - component: {fileID: 136365571}
   - component: {fileID: 136365570}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: HappyBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1944,7 +1944,7 @@ GameObject:
   - component: {fileID: 179364790}
   - component: {fileID: 179364789}
   - component: {fileID: 179364788}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: PlaceMerchantBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3607,28 +3607,32 @@ GameObject:
   m_Component:
   - component: {fileID: 303351920}
   - component: {fileID: 303351921}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: pngtree-cartoon-food-bread-whole-wheat-bread-png-image_423640
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &303351920
-Transform:
+--- !u!224 &303351920
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303351919}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -117.7, y: -0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 469080059}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -117.7, y: 0}
+  m_SizeDelta: {x: 3.6, y: 3.6}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &303351921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4049,7 +4053,7 @@ GameObject:
   - component: {fileID: 332925989}
   - component: {fileID: 332925991}
   - component: {fileID: 332925990}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: RoadNumtxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4892,7 +4896,7 @@ GameObject:
   - component: {fileID: 359619894}
   - component: {fileID: 359619896}
   - component: {fileID: 359619895}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5254,6 +5258,8 @@ MonoBehaviour:
   delayAmount: 5
   notifTimer: 0
   notifDelayAmount: 20
+  dayTimer: 0
+  dayDelayAmount: 60
 --- !u!4 &391013806
 Transform:
   m_ObjectHideFlags: 0
@@ -5637,7 +5643,7 @@ GameObject:
   - component: {fileID: 445087857}
   - component: {fileID: 445087859}
   - component: {fileID: 445087858}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: notiftxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5999,7 +6005,7 @@ GameObject:
   - component: {fileID: 460429663}
   - component: {fileID: 460429665}
   - component: {fileID: 460429664}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: HealthBarBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6077,7 +6083,7 @@ GameObject:
   - component: {fileID: 469080059}
   - component: {fileID: 469080061}
   - component: {fileID: 469080060}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: FoodBarBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6155,7 +6161,7 @@ GameObject:
   - component: {fileID: 482876077}
   - component: {fileID: 482876079}
   - component: {fileID: 482876078}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7044,7 +7050,7 @@ GameObject:
   - component: {fileID: 545299300}
   - component: {fileID: 545299299}
   - component: {fileID: 545299298}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: PlaceFarmBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8790,7 +8796,7 @@ GameObject:
   - component: {fileID: 679670157}
   - component: {fileID: 679670159}
   - component: {fileID: 679670158}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9630,7 +9636,7 @@ GameObject:
   - component: {fileID: 766344427}
   - component: {fileID: 766344426}
   - component: {fileID: 766344425}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: PlaceHospitalBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11780,28 +11786,32 @@ GameObject:
   m_Component:
   - component: {fileID: 928470368}
   - component: {fileID: 928470369}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: kisspng-smiley-emoticon-computer-icons-face-clip-art-cardiovascular-clipart-5adfae21bb7a11.0217376615246085457679_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &928470368
-Transform:
+--- !u!224 &928470368
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 928470367}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -117.8, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 5, y: 5, z: 2.2408962}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1997911605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -117.8, y: 0}
+  m_SizeDelta: {x: 3.7, y: 3.7}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &928470369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11984,7 +11994,7 @@ GameObject:
   - component: {fileID: 933281128}
   - component: {fileID: 933281130}
   - component: {fileID: 933281129}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: goldtxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12007,8 +12017,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 174.3451, y: -62.899994}
-  m_SizeDelta: {x: 424.3276, y: 50}
+  m_AnchoredPosition: {x: 144.1, y: -62.899994}
+  m_SizeDelta: {x: 350.04, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &933281129
 MonoBehaviour:
@@ -12596,7 +12606,7 @@ GameObject:
   - component: {fileID: 943180242}
   - component: {fileID: 943180241}
   - component: {fileID: 943180240}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: PlaceHouseBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14147,7 +14157,7 @@ GameObject:
   - component: {fileID: 1061248231}
   - component: {fileID: 1061248233}
   - component: {fileID: 1061248232}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: healthtxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14170,8 +14180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175.96115, y: 0}
-  m_SizeDelta: {x: 145.1224, y: 22.175}
+  m_AnchoredPosition: {x: 126.27, y: 0}
+  m_SizeDelta: {x: 45.74, y: 22.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1061248232
 MonoBehaviour:
@@ -14281,7 +14291,7 @@ GameObject:
   - component: {fileID: 1062909071}
   - component: {fileID: 1062909073}
   - component: {fileID: 1062909072}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15119,7 +15129,7 @@ GameObject:
   - component: {fileID: 1099905043}
   - component: {fileID: 1099905045}
   - component: {fileID: 1099905044}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: foodtxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15142,8 +15152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176.15923, y: -0.000088692}
-  m_SizeDelta: {x: 145.5184, y: 22.175}
+  m_AnchoredPosition: {x: 126.53, y: -0.000088692}
+  m_SizeDelta: {x: 46.26, y: 22.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099905044
 MonoBehaviour:
@@ -15512,7 +15522,7 @@ GameObject:
   - component: {fileID: 1112879218}
   - component: {fileID: 1112879217}
   - component: {fileID: 1112879216}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15608,6 +15618,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2120105394}
+  - {fileID: 1611737352}
   - {fileID: 933281128}
   - {fileID: 1590106885}
   - {fileID: 2019917945}
@@ -16857,7 +16868,7 @@ Transform:
   m_GameObject: {fileID: 1180436534}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0.34447372, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17114,7 +17125,7 @@ GameObject:
   - component: {fileID: 1201866794}
   - component: {fileID: 1201866792}
   - component: {fileID: 1201866796}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: 'NotificationPanel '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19381,7 +19392,7 @@ GameObject:
   - component: {fileID: 1387512112}
   - component: {fileID: 1387512114}
   - component: {fileID: 1387512113}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: buildmenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22407,7 +22418,7 @@ GameObject:
   - component: {fileID: 1587342035}
   - component: {fileID: 1587342037}
   - component: {fileID: 1587342036}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22541,7 +22552,7 @@ GameObject:
   - component: {fileID: 1590106885}
   - component: {fileID: 1590106887}
   - component: {fileID: 1590106886}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: peopletxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22564,8 +22575,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 173.76996, y: -21.200012}
-  m_SizeDelta: {x: 426.4795, y: 50}
+  m_AnchoredPosition: {x: 143.37, y: -21.200012}
+  m_SizeDelta: {x: 351.82, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590106886
 MonoBehaviour:
@@ -23135,6 +23146,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1607359270}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1611737351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611737352}
+  - component: {fileID: 1611737355}
+  - component: {fileID: 1611737354}
+  - component: {fileID: 1611737353}
+  m_Layer: 2
+  m_Name: ResourceInfoPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1611737352
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611737351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1112879220}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 279.67}
+  m_SizeDelta: {x: 286.63, y: 170.51}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1611737353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611737351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &1611737354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611737351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5345619, g: 0.45977214, b: 0.8490566, a: 0.6313726}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1611737355
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611737351}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1620093911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24573,28 +24686,32 @@ GameObject:
   m_Component:
   - component: {fileID: 1690629999}
   - component: {fileID: 1690630000}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: istockphoto-1182472970-612x612
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1690629999
-Transform:
+--- !u!224 &1690629999
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690629998}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -117, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 460429663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -117, y: 0.2}
+  m_SizeDelta: {x: 6.12, y: 5.17}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1690630000
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27413,7 +27530,7 @@ GameObject:
   - component: {fileID: 1910302303}
   - component: {fileID: 1910302305}
   - component: {fileID: 1910302304}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28142,7 +28259,7 @@ GameObject:
   - component: {fileID: 1956440746}
   - component: {fileID: 1956440748}
   - component: {fileID: 1956440747}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: FoodBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28926,7 +29043,7 @@ GameObject:
   - component: {fileID: 1997911605}
   - component: {fileID: 1997911607}
   - component: {fileID: 1997911606}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: HappyBarBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29124,7 +29241,7 @@ GameObject:
   - component: {fileID: 2019917948}
   - component: {fileID: 2019917947}
   - component: {fileID: 2019917946}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: WarningPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30196,7 +30313,7 @@ GameObject:
   - component: {fileID: 2120105397}
   - component: {fileID: 2120105396}
   - component: {fileID: 2120105395}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
