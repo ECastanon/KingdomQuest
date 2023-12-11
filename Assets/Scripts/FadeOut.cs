@@ -9,11 +9,12 @@ public class FadeOut : MonoBehaviour
     private Image myColor;
     private TextMeshProUGUI textColor;
     private float opacity = 0;
-    public void OnReveal()
+    public void OnReveal(string passedString)
     {
         opacity = 2;
         myColor = GetComponent<Image>();
         textColor = gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        ChangeText(passedString);
     }
     void Update()
     {
@@ -28,5 +29,9 @@ public class FadeOut : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+    }
+    private void ChangeText(string newString)
+    {
+        textColor.text = newString;
     }
 }
