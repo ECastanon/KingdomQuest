@@ -31,7 +31,7 @@ public class RoadManager : MonoBehaviour
             startPos = pos;
 
             temporaryPlacementPos.Add(pos);  
-            pm.PlaceOnMap(pos, roadFixer.deadEnd, CellType.Road);
+            if(CheckIfMountainNear(pos)){pm.PlaceOnMap(pos, roadFixer.deadEnd, CellType.Road);}
         } else if (placementMode == true)
         {
             pm.RemoveAllTempStructures();
@@ -49,7 +49,7 @@ public class RoadManager : MonoBehaviour
             foreach(var tempPos in temporaryPlacementPos)
             {
                 if(pm.CheckIfPositionIsFree(pos) == false){continue;}
-                pm.PlaceOnMap(tempPos, roadFixer.deadEnd, CellType.Road);
+                if(CheckIfMountainNear(tempPos)){pm.PlaceOnMap(tempPos, roadFixer.deadEnd, CellType.Road);}
             }
         }
         FixRoadPrefabs();
@@ -83,5 +83,14 @@ public class RoadManager : MonoBehaviour
         }
         temporaryPlacementPos.Clear();
         startPos = Vector3Int.zero;
+    }
+    private bool CheckIfMountainNear(Vector3Int position) //Prevents structure placement if too close to a mountain
+    {
+        RaycastHit[] hits = Physics.BoxCastAll(position + new Vector3(0, 0.5f, 0), new Vector3(0.5f, 0.5f, 0.5f), transform.up, Quaternion.identity, 1f, 1 << LayerMask.NameToLayer("Mountain"));
+        if(hits.Length > 0)
+        {
+            Debug.Log("This position is too close to a mountain!");
+            return false;
+        } else {return true;}
     }
 }

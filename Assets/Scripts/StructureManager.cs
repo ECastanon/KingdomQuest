@@ -108,6 +108,16 @@ public class StructureManager : MonoBehaviour
             Debug.Log("This position is not EMPTY");
             return false;
         }
+        return CheckIfMountainNear(position);
         return true;
+    }
+    private bool CheckIfMountainNear(Vector3Int position) //Prevents structure placement if too close to a mountain
+    {
+        RaycastHit[] hits = Physics.BoxCastAll(position + new Vector3(0, 0.5f, 0), new Vector3(0.5f, 0.5f, 0.5f), transform.up, Quaternion.identity, 1f, 1 << LayerMask.NameToLayer("Mountain"));
+        if(hits.Length > 0)
+        {
+            Debug.Log("This position is too close to a mountain!");
+            return false;
+        } else {return true;}
     }
 }
