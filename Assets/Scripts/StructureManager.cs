@@ -7,6 +7,7 @@ using UnityEngine;
 public class StructureManager : MonoBehaviour
 {
     private PlacementManager pm;
+    private UIController uc;
     public List<GameObject> housePrefabs;
     public List<GameObject> specialPrefabs;
     public List<GameObject> merchantPrefabs;
@@ -16,16 +17,37 @@ public class StructureManager : MonoBehaviour
     private void Start()
     {
         pm = GameObject.Find("PlacementManager").GetComponent<PlacementManager>();
+        uc = GameObject.Find("Canvas").GetComponent<UIController>();
     }
     public void PlaceHouse(Vector3Int position) //Passes house information to PlacementManager
     {
-        if (CheckPositionBeforePlacement(position))
+        List<GameObject> straights = new List<GameObject>();
+        foreach (var road in GameObject.Find("RoadManager").GetComponent<RoadManager>().roadList)
         {
-            int rand = Random.Range(0, housePrefabs.Count);
-            pm.PlaceOnMap(position, housePrefabs[rand], CellType.Structure);
-            AudioPlayer.instance.PlayPlacementSound();
+            if (road.transform.name == "StraightRoad(Clone)" || road.transform.name == "DeadEndRoad(Clone)")
+            {
+                straights.Add(road);
+            }
         }
-        Debug.Log("House Pos: " + position);
+        if (straights.Count >= 2)
+        {
+            if (CheckPositionBeforePlacement(position))
+            {
+                int house = GameObject.Find("HouseMenu").GetComponent<HousePanel>().houseToUse;
+                if(house > 0)
+                {
+                    pm.PlaceOnMap(position, housePrefabs[house-1], CellType.Structure);
+                    AudioPlayer.instance.PlayPlacementSound();
+                } else {
+                    uc.ShowWarning("First select a house type!");
+                }
+            }
+            Debug.Log("House Pos: " + position);
+        }
+        else
+        {
+            uc.ShowWarning("You must have at least 2 roads before building a house!");
+        }
     }
 
     public void PlaceSpecial(Vector3Int position) //Passes special information to PlacementManager

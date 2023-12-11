@@ -52,16 +52,7 @@ public class UIController : MonoBehaviour
             }
             else
             {
-                warningPanel.SetActive(true);
-                if (warningPanel.activeSelf)
-                {
-                    // Check if the warningPanel is active before accessing its components
-                    FadeOut fadeOut = warningPanel.GetComponent<FadeOut>();
-                    if (fadeOut != null)
-                    {
-                        fadeOut.OnReveal();
-                    }
-                }
+                ShowWarning("You must have at least 2 roads before building a house!");
             }
 
         });
@@ -84,6 +75,19 @@ public class UIController : MonoBehaviour
             ModifyOutLine(hospitalButton);
             OnHospitalPlacement?.Invoke();
         });
+    }
+    public void ShowWarning(string stringToPass)
+    {
+        warningPanel.SetActive(true);
+        if (warningPanel.activeSelf)
+        {
+            // Check if the warningPanel is active before accessing its components
+            FadeOut fadeOut = warningPanel.GetComponent<FadeOut>();
+            if (fadeOut != null)
+            {
+                fadeOut.OnReveal(stringToPass);
+            }
+        }
     }
 
     private void ModifyOutLine(Button button)
