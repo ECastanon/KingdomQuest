@@ -17,7 +17,7 @@ public class PlacementManager : MonoBehaviour
     }
     public bool CheckIfPositionInBound(Vector3Int pos) //Checks if the selected tile is within the given bounds
     {
-        if(pos.x >= 0 && pos.x < width && pos.x >= 0 && pos.z < height && pos.y == 0)
+        if(pos.x >= 0 && pos.x < width && pos.z >= 0 && pos.z < height && pos.y == 0)
         {
             return true;
         }
