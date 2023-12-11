@@ -23504,9 +23504,9 @@ MonoBehaviour:
   merchantCost: 50
   farmCost: 40
   hospitalCost: 60
-  merchantProduction: 10
-  farmProduction: 5
-  hospitalEffectiveness: 7
+  merchantProduction: 5
+  farmProduction: 4
+  hospitalEffectiveness: 4
   houseCount: 0
   merchantCount: 0
   farmCount: 0

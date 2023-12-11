@@ -30,6 +30,7 @@ public class ResourceManager : MonoBehaviour
     public int hospitalCost;
     [Header("Structure Variables")]
     public int merchantProduction = 10; //Money a single merchant will produce
+    public float merchantMultiplier = 0; //Multiplier that changes based on happiness;
     public int farmProduction = 5; //Number of people a single farm can supply
     public int hospitalEffectiveness = 5; //Number of people a hospital can supply
 
@@ -79,7 +80,7 @@ public class ResourceManager : MonoBehaviour
         if(timer > delayAmount)
         {
             timer = 0;
-            gpm = merchantCount * merchantProduction;
+            gpm = Mathf.RoundToInt((merchantCount + 1) * merchantProduction * merchantMultiplier); //All towns will start off producing the same as 1 merchant
             goldCount += gpm;
         } else {timer += Time.deltaTime;}
         if(notifTimer > notifDelayAmount)
@@ -147,12 +148,15 @@ public class ResourceManager : MonoBehaviour
         if(happyCount >= 80) //Changes to happy face
         {
             happySprite.sprite = GameObject.Find("happy").GetComponent<SpriteRenderer>().sprite;
+            merchantMultiplier = 2;
         } else if(happyCount <= 50) //Changes to Unhappy face
         {
             happySprite.sprite = GameObject.Find("unhappy").GetComponent<SpriteRenderer>().sprite;
+            merchantMultiplier = .5f;
         } else //Changes to neutral face
         {
             happySprite.sprite = GameObject.Find("neutral").GetComponent<SpriteRenderer>().sprite;
+            merchantMultiplier = 1;
         }
     }
     public void StartDay()

@@ -6221,7 +6221,7 @@ MonoBehaviour:
   farmCost: 40
   hospitalCost: 60
   merchantProduction: 10
-  farmProduction: 5
+  farmProduction: 3
   hospitalEffectiveness: 7
   houseCount: 0
   merchantCount: 0
