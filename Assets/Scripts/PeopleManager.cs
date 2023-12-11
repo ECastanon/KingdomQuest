@@ -63,18 +63,20 @@ public class PeopleManager : MonoBehaviour
         {
             rand = Random.Range(1, rm.houseCount);
             cycles = rand;
-            while(population <= rm.houseCount*3 || rand != 0)
+            if(cycles != 0)
             {
-                GameObject civ = Instantiate(citizenPrefabs[rand], transform);
+                notif.SlideInNotif(cycles + "people have entered the city!!!");
+            }
+            while(cycles > 0)
+            {
+                int rand_ = Random.Range(0, citizenPrefabs.Count);
+                GameObject civ = Instantiate(citizenPrefabs[rand_], transform);
                 population += 1; //Increases population when spawning a person
                 civ.transform.SetParent(transform);
                 peopleOnMap.Add(civ);
+                cycles -= 1;
                 FindRandomPersonLocation(civ);
             }
-        }
-        if(cycles != 0)
-        {
-            notif.SlideInNotif(cycles + " have entered the city!!!");
         }
     }
     private void FindRandomPersonLocation(GameObject civ) //Creates a list of straight/deadend roads and randomly places a person on one
