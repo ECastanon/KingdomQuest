@@ -63,18 +63,28 @@ public class StructureManager : MonoBehaviour
     {
         if (CheckPositionBeforePlacement(position))
         {
-            int rand = Random.Range(0, merchantPrefabs.Count);
-            pm.PlaceOnMap(position, merchantPrefabs[rand], CellType.merchantStructure);
-            AudioPlayer.instance.PlayPlacementSound();
+            int merch = GameObject.Find("MerchantMenu").GetComponent<HousePanel>().houseToUse;
+            if(merch > 0)
+            {
+                pm.PlaceOnMap(position, merchantPrefabs[merch-1], CellType.merchantStructure);
+                AudioPlayer.instance.PlayPlacementSound();
+            } else {
+                uc.ShowWarning("First select a merchant type!");
+            }
         }
     }
     public void PlaceFarm(Vector3Int position) //Passes farm information to PlacementManager
     {
         if (CheckPositionBeforePlacement(position))
         {
-            int rand = Random.Range(0, farmPrefabs.Count);
-            pm.PlaceOnMap(position, farmPrefabs[rand], CellType.farmStructure);
-            AudioPlayer.instance.PlayPlacementSound();
+            int farm = GameObject.Find("FarmMenu").GetComponent<HousePanel>().houseToUse;
+            if(farm > 0)
+            {
+                pm.PlaceOnMap(position, farmPrefabs[farm-1], CellType.farmStructure);
+                AudioPlayer.instance.PlayPlacementSound();
+            } else {
+                uc.ShowWarning("First select a farm type!");
+            }
         }
     }
     public void PlaceHospital(Vector3Int position) //Passes hospital information to PlacementManager

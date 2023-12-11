@@ -16,13 +16,25 @@ public class HousePanel : MonoBehaviour
     }
     public void SlideIn()
     {
-        StartCoroutine(moveOverTime(transform, new Vector3(-335, -85, 0), 0.5f));
+        if(gameObject.name == "HouseMenu")
+        {
+            StartCoroutine(moveOverTime(transform, new Vector3(-335, -85, 0), 0.5f));
+        } else 
+        {
+            StartCoroutine(moveOverTime(transform, new Vector3(-335, -125, 0), 0.5f));
+        }
         returnButton.SetActive(true);
         inView = true;
     }
     public void SlideOut()
     {
-        StartCoroutine(moveOverTime(transform, new Vector3(-500, -85, 0), 0.25f));
+        if(gameObject.name == "HouseMenu")
+        {
+            StartCoroutine(moveOverTime(transform, new Vector3(-500, -85, 0), 0.25f));
+        } else 
+        {
+            StartCoroutine(moveOverTime(transform, new Vector3(-500, -125, 0), 0.25f));
+        }
         returnButton.SetActive(false);
         inView = false;
         houseToUse = 0;
