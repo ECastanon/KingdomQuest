@@ -20540,7 +20540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d627b2a9d3cfd469330c12395d77de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceManager: {fileID: 0}
+  resourceManager: {fileID: 391013805}
   modelsToDelete: []
 --- !u!4 &1180436536
 Transform:

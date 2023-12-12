@@ -35,10 +35,12 @@ public class deleteMechanics : MonoBehaviour
                     if (Array.Exists(modelsToDelete, model => currentTransform.tag.Equals(model)))
                     {
                         Debug.Log("Deleting model with tag: " + currentTransform.tag);
-                        if (currentTransform.tag == "road") {
+                        if (currentTransform.tag == "road")
+                        {
                             resourceManager.goldCount += resourceManager.roadCost;
                         }
-                        if (currentTransform.tag == "house") {
+                        if (currentTransform.tag == "house")
+                        {
                             i++;
                             resourceManager.goldCount += resourceManager.houseCost;
                             if (i == 2 ) {
@@ -46,7 +48,8 @@ public class deleteMechanics : MonoBehaviour
                               i = 0;
                             }
                         }
-                        if (currentTransform.tag == "special") {
+                        if (currentTransform.tag == "special")
+                        {
                             i++;
                             resourceManager.goldCount += resourceManager.houseCost;
                             if (i == 2 ) {
@@ -55,12 +58,17 @@ public class deleteMechanics : MonoBehaviour
                             }
                             
                         }
-                        if (currentTransform.tag == "merchant") {
+                        if (currentTransform.tag == "merchant")
+                        {
                             resourceManager.goldCount += resourceManager.merchantCost;
                         }
+                        if (currentTransform.tag == "farm")
+                        {
+                            resourceManager.goldCount += resourceManager.merchantCost;
+                        }
+                        GameObject.Find("PlacementManager").GetComponent<PlacementManager>().RemoveFromDictionary(Vector3Int.FloorToInt(currentTransform.position));
                         Destroy(currentTransform.gameObject);
                     }
-
                     // Move to the parent transform
                     Debug.Log("moving to parent");
                     //resourceManager.goldCount -= resourceManager.houseCost;

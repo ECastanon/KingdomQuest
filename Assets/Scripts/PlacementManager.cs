@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlacementManager : MonoBehaviour
 {
     public int width, height;
-    Grid placementGrid;
-    private Dictionary<Vector3Int, StructureModel> tempRoadObject = new Dictionary<Vector3Int, StructureModel>();
-    private Dictionary<Vector3Int, StructureModel> structDict = new Dictionary<Vector3Int, StructureModel>();
+    public Grid placementGrid;
+    public Dictionary<Vector3Int, StructureModel> tempRoadObject = new Dictionary<Vector3Int, StructureModel>();
+    public Dictionary<Vector3Int, StructureModel> structDict = new Dictionary<Vector3Int, StructureModel>();
     private ResourceManager resourceManager;
 
     void Start()
@@ -92,6 +92,14 @@ public class PlacementManager : MonoBehaviour
             structDict.Add(struc.Key, struc.Value);
         }
         tempRoadObject.Clear();
+    }
+    public void RemoveFromDictionary(Vector3Int pos)
+    {
+        if(structDict.ContainsKey(pos))
+        {
+            structDict.Remove(pos);
+            placementGrid[pos.x, pos.z] = CellType.Empty;
+        }
     }
     private void DestroyNatureAt(Vector3Int position) //Removes Nature Layer items near tile
     {
