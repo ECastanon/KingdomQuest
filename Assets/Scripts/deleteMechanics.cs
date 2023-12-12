@@ -9,10 +9,15 @@ public class deleteMechanics : MonoBehaviour
     private string[] defaultModelsToDelete = { "road", "house", "merchant", "special" };
     public string[] modelsToDelete;
     private int i = 0;
-    
+    private HousePanel hp, fp, mp;
+    private PeopleManager pm;
 
     void Start()
     {
+        hp = GameObject.Find("HouseMenu").GetComponent<HousePanel>();
+        fp = GameObject.Find("FarmMenu").GetComponent<HousePanel>();
+        mp = GameObject.Find("MerchantMenu").GetComponent<HousePanel>();
+        pm = GameObject.Find("PeopleManager").GetComponent<PeopleManager>();
         if (modelsToDelete == null || modelsToDelete.Length == 0)
         {
             modelsToDelete = defaultModelsToDelete;
@@ -23,6 +28,7 @@ public class deleteMechanics : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && Input.GetKey(KeyCode.LeftControl))
         {
+            hp.SlideOut();fp.SlideOut();mp.SlideOut();
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -46,6 +52,7 @@ public class deleteMechanics : MonoBehaviour
                             if (i == 2 ) {
                               resourceManager.goldCount -= resourceManager.houseCost;
                               i = 0;
+                              pm.population--;
                             }
                         }
                         if (currentTransform.tag == "special")
