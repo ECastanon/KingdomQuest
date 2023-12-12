@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7724583464023637446}
   m_Layer: 0
   m_Name: SM_Mushroom_01_B
-  m_TagString: Untagged
+  m_TagString: farm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

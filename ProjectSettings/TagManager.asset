@@ -9,6 +9,7 @@ TagManager:
   - merchant
   - special
   - hospital
+  - farm
   layers:
   - Default
   - TransparentFX

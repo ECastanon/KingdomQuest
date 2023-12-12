@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 64761306850299272}
   m_Layer: 0
   m_Name: SM_Prop_Cart_03
-  m_TagString: Untagged
+  m_TagString: farm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Random=UnityEngine.Random;
 
 public class deleteMechanics : MonoBehaviour
 {
     public ResourceManager resourceManager; 
-    private string[] defaultModelsToDelete = { "road", "house", "merchant", "special" };
+    private string[] defaultModelsToDelete = { "road", "house", "merchant", "special", "farm", "hospital" };
     public string[] modelsToDelete;
     private int i = 0;
     private HousePanel hp, fp, mp;
@@ -26,7 +27,7 @@ public class deleteMechanics : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetMouseButtonDown(1))
         {
             hp.SlideOut();fp.SlideOut();mp.SlideOut();
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -50,20 +51,22 @@ public class deleteMechanics : MonoBehaviour
                             i++;
                             resourceManager.goldCount += resourceManager.houseCost;
                             if (i == 2 ) {
-                              resourceManager.goldCount -= resourceManager.houseCost;
-                              i = 0;
-                              pm.population--;
+                                resourceManager.goldCount -= resourceManager.houseCost;
+                                i = 0;
+                                int rand = Random.Range(0, pm.peopleOnMap.Count);
+                                Destroy(pm.peopleOnMap[rand]);
+                                pm.peopleOnMap.Remove(pm.peopleOnMap[rand]);
+                                pm.population -= 1;
                             }
                         }
-                        if (currentTransform.tag == "special")
+                        if (currentTransform.tag == "hospital")
                         {
                             i++;
-                            resourceManager.goldCount += resourceManager.houseCost;
+                            resourceManager.goldCount += resourceManager.hospitalCost;
                             if (i == 2 ) {
-                              resourceManager.goldCount -= resourceManager.houseCost;
+                              resourceManager.goldCount -= resourceManager.hospitalCost;
                               i = 0;
                             }
-                            
                         }
                         if (currentTransform.tag == "merchant")
                         {
